@@ -1,0 +1,38 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'NUMERICRANGE',
+                                           'COMMENT' => 'cuatro',
+                                           'ANSWER' => [
+                                                         '3',
+                                                         '5'
+                                                       ]
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => '2 m + 2 m \\=',
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'ejemplo numerica'
+                                        }
+                        }, 'NUMERIC' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'NUMERICRANGE',
+                                           'COMMENT' => 'seis km',
+                                           'ANSWER' => [
+                                                         '5',
+                                                         '7'
+                                                       ]
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => '3 km + 3 km \\=',
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'numerica con multiplicadores'
+                                        }
+                        }, 'NUMERIC' )
+               ], 'Gift' );

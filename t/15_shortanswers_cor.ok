@@ -1,0 +1,977 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'H'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for hydrogen is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'He'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for helium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Li'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for lithium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Be'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for beryllium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'B'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for boron is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'C'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for carbon is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'N'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for nitrogen is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'O'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for oxygen is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'F'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for fluorine is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ne'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for neon is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Na'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for sodium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Mg'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for magnesium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Al'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for aluminum is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Si'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for silicon is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'P'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for phosphorus is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'S'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for sulfur is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Cl'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for chlorine is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ar'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for argon is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'K'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for potassium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ca'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for calcium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Sc'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for scandium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ti'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for titanium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'V'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for vanadium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Cr'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for chromium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Mn'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for manganese is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Fe'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for iron is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Co'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for cobalt is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ni'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for nickel is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Cu'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for copper is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Zn'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for zinc is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ga'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for gallium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ge'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for germanium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'As'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for arsenic is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Se'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for selenium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Br'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for bromine is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Kr'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for krypton is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Rb'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for rubidium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Sr'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for strontium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Mo'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for molybdenum is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Pd'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for palladium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ag'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for silver is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Cd'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for cadmium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Sn'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for tin is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Sb'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for antimony is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Te'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for tellurium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'I'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for iodine is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Xe'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for xenon is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Cs'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for cesium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ba'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for barium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Pm'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for promethium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'W'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for tungsten is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Os'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for osmium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ir'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for iridium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Pt'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for platinum is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Au'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for gold is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Hg'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for mercury is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Pb'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for lead is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Bi'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for bismuth is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Po'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for polonium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Rn'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for radon is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Fr'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for francium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ra'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for radium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Ac'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for actinium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'U'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for uranium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Pu'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'the symbol for plutonium is ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' )
+               ], 'Gift' );

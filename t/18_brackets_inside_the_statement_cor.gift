@@ -1,0 +1,9 @@
+// question: 148  name: corchetes dentro  Esta horrible errata en los "feedback" es
+// causada por el interprete de Moodle: el presente ejemplo fue generado mediante
+// la interface de Moodl. Los comentarios 
+// estaban al revés y fueron invertidos en la exportación al gift.
+// Que hacer?
+::corchetes dentro::[plain]Se escapa el corchete [ aqui y el ] cerrar?{TRUE#no. Pruebe de nuevo#cierto}
+
+
+

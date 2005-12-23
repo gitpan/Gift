@@ -1,0 +1,10 @@
+Error around lines 2 and 3!
+Expecting a numeric answer or }
+
+Last question processed:
+::ejemplo numerica::[plain]2 m + 2 m \=
+Error is probably before or around:
+
+=correcto 
+}
+

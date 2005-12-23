@@ -1,0 +1,32 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT_FALSE' => undef,
+                                           'COMMENT_TRUE' => undef,
+                                           'ANSWER' => 'TRUE'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'Cristobal Colon descubrio America en el año 1492',
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'cristobalcolon'
+                                        }
+                        }, 'TRUEFALSE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => '¡Muy bien!',
+                                           'WEIGHT' => '100',
+                                           'ANSWER' => 'h2xs'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => '¿Con que programa creo el esqueleto para un modulo?',
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'creacion de un modulo'
+                                        }
+                        }, 'SHORTANSWER' )
+               ], 'Gift' );

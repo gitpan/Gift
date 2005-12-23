@@ -1,0 +1,9 @@
+- Entregar en CPAN
+- Ponerle opciones a gift (ejecutable). Convertirlo en un validador.
+- Hay una pérdida en el número de líneas en algún lado.
+* Escribir rutina que ejecuta gift sobre todos los .gift  produce los .ok
+* El código de Lex_inside_answers necesita mejorar en claridad
+* Escribir un traductor a "HTML"
+* Escribir un traductor a "CGI"
+* Escribir un traductor a "exam"
+* Escribir un traductor a "latex"

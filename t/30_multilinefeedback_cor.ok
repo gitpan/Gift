@@ -1,0 +1,40 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '.',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => 'This was an important city, 
+               but the wrong answer.',
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Jerusalem'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => 'He was born here, 
+                   but not raised here.',
+                                           'WEIGHT' => '25',
+                                           'ANSWER' => 'Bethlehem'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => 'You 
+                 need to be 
+                 more specific.',
+                                           'WEIGHT' => '50',
+                                           'ANSWER' => 'Galilee'
+                                         },
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => 'Yes! That\'s right!',
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Nazareth'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'Jesus Christ was from ',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Jesus\' hometown'
+                                        }
+                        }, 'MULTIPLECHOICE' )
+               ], 'Gift' );

@@ -1,0 +1,5 @@
+::caracterizar correspondencia::[html]¿Cuál es el número de flechas?{
+  =uno &gt; 1
+  =dos &gt; -> 2
+  =tres &gt; -> 3
+}

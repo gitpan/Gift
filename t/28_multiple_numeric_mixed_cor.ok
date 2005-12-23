@@ -1,0 +1,29 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '.',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'NUMERIC',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => [
+                                                         '3.1415',
+                                                         undef
+                                                       ]
+                                         },
+                                         {
+                                           'TYPE' => 'NUMERICRANGE',
+                                           'COMMENT' => undef,
+                                           'ANSWER' => [
+                                                         '3.141',
+                                                         '3.142'
+                                                       ]
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'What is the value of pi (to 3 decimal places)? ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'NUMERIC' )
+               ], 'Gift' );

@@ -1,0 +1,110 @@
+// question: 203  name: Text Formatting 
+::Text Formatting::When a word stands out like <strong>this</strong> it is said to be {
+	=bold
+	~italic
+	~a hyperlink
+	~underlined
+}
+
+
+// question: 204  name: Leaning 
+::Leaning::When a word looks like <em>this</em> it is said to be{
+	=italic
+	~bold
+	~underlined
+	~a hyperlink
+}
+
+
+// question: 205  name: Face 
+::Face::<p><font face="times new roman,times,serif">The way the characters look is said to be the</font></p>{
+	=font
+	~emphasis
+	~structure
+}
+
+
+// question: 206  name: CASE 
+::CASE::THIS TYPE OF CASE IS KNOWN AS{
+	=uppercase
+	~lowercase
+}
+
+
+// question: 207  name: case 
+::case::this type of case is known as{
+	~uppercase
+	=lowercase
+}
+
+
+// question: 208  name: Sans or Serif 
+::Sans or Serif::<font face="arial,helvetica,sans-serif">A case like this which has no 'flicks' is known as</font>{
+	=sans serif
+	~serif
+}
+
+
+// question: 209  name: Serif or Sans 
+::Serif or Sans::<font face="georgia,times new roman,times,serif">A case like this which has 'flicks' is known as</font>{
+	~sans serif
+	=serif
+}
+
+
+// question: 210  name: Using colour 
+::Using colour::Which of these is <strong>not</strong> a good reason for including colour?{
+	~To make a key point stand out
+	~To attract the attention of the audience
+	~To signify something such as anger or greed
+	~To make the presentation more interesting
+	=To hide blank spaces
+}
+
+
+// question: 211  name: Font size 
+::Font size::The font size should always be less than 20 points{FALSE#It depends upon the size of the screen it will be shown on}
+
+
+// question: 212  name: Ammount of text 
+::Ammount of text::<p>Presentations usually only contain a small amount of text on each slide.</p><p>Why do you think this is?</p>{
+	=Because the font size usually has to be large so everyone in the room can read it
+	~The screen the presentation is shown on is usually too small
+	~The computer may not have enough memory
+	~The font cannot be reduced
+}
+
+
+// question: 213  name: Standing out 
+::Standing out::Which of the following is <strong>not</strong> a technique to make text stand out?{
+	~Bold
+	~Larger font
+	~Colour
+	~Underline
+	~Drop shadow
+	~Case
+	=Reducing the font size
+}
+
+
+// question: 214  name: Palette 
+::Palette::The palatte is the colours you have available{TRUE}
+
+
+// question: 215  name: Projection 
+::Projection::The presentation will look exactly the same on the projector as it does on the monitor{FALSE#Projectors usually produce a much lighter image}
+
+
+// question: 216  name: Graduated 
+::Graduated::A graduated fill is a solid block of one colour{FALSE#A graduated fill involves 2 or more colours which gradually merge}
+
+
+// question: 217  name: Colour schemes 
+::Colour schemes::Which of the following colour schemes would be suitable for a presentation about Egglescliffe School{
+	=Blue and Yellow
+	~Black and White
+	~Green and White
+	~Red and White
+}
+
+

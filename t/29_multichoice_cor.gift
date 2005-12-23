@@ -1,0 +1,16 @@
+// question: 119  name: gramatica+acciones 
+::gramatica+acciones::[plain]Una gramática independiente del contexto aumentada con acciones en la que el orden de  evaluación de las acciones se muestra de manera explícita es:{
+  ~Una traducción dirigida por la sintáxis#Incorrecto
+  =Un esquema de traducción#Correcto
+  ~Un programa yacc#Incorrecto
+}
+
+
+// question: 120  name: pregunta con tildes en la respuesta 
+::pregunta con tildes en la respuesta::[plain]¿Que pasa si ponemos un tilde (\~) en la respuesta?{
+  =Pues que el tilde \~ se escapará
+  ~Pues que \~ no se escapara
+  ~Sea un \= sea una \~ se escapará
+}
+
+

@@ -1,0 +1,120 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => 'Incorrecto',
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Una traducción dirigida por la sintáxis'
+                                         },
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => 'Correcto',
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Un esquema de traducción'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => 'Incorrecto',
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Un programa yacc'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'Una gramática independiente del contexto aumentada con acciones en la que el orden de  evaluación de las acciones se muestra de manera explícita es:',
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'gramatica+acciones'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Pues que el tilde \\~ se escapará'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Pues que \\~ no se escapara'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Sea un \\= sea una \\~ se escapará'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => '¿Que pasa si ponemos un tilde (\\~) en la respuesta?',
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'pregunta con tildes en la respuesta'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Se escapa todo,'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'No se escapa nada'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Se escapa solo el \\= pero no el resto'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Se escapa solo el \\~ pero no el resto'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Se eccapan \\{ y \\} pero no el \\='
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'Tengo unas llaves \\{ y \\} y un \\= y un tilde \\~ en el enunciado ¿Que ocurre?',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'iguales escapados'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'SECOND' => 'flecha ->',
+                                           'FIRST' => 'flecha final - >'
+                                         },
+                                         {
+                                           'SECOND' => '-> flecha',
+                                           'FIRST' => '- > principio'
+                                         },
+                                         {
+                                           'SECOND' => 'flecha en -> medio',
+                                           'FIRST' => 'en - > medio'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'Que ocurre cuando hay flechas -> en medio del texto y de las parejas?',
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'con -> en medio'
+                                        }
+                        }, 'MATCH' )
+               ], 'Gift' );

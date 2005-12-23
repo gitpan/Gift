@@ -1,0 +1,22 @@
+
+Dado un programa como
+<P>
+<PRE>
+int a; a = a * 4 * 5;
+</PRE>
+&#191;Ser&#225; plegado el <code>4 * 5</code>?
+{FALSE#el árbol que se produce es =(*(*(a,4),5)}
+
+&#191;Que queda en <code>@text</code> después de la ejecución?
+<code>
+@text = (1, 2, 3, 4, 5);
+@text[@text] = 0;
+</code>
+{
+~1, 0, 3, 4, 5
+~1, 2, 3, 4, 5, 0
+=1, 0, undef, undef, undef, undef
+}
+
+<P>
+

@@ -1,0 +1,32 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'No one'
+                                         },
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => '50',
+                                           'ANSWER' => 'Grant'
+                                         },
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => '50',
+                                           'ANSWER' => 'Grant\'s wife'
+                                         },
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Grant\'s father'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'What two people are entombed in Grant\'s tomb? ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'MULTIPLEANSWER' )
+               ], 'Gift' );

@@ -1,0 +1,12 @@
+Revision history for Perl extension Gift.
+
+0.01  Tue Dec  6 11:51:23 2005
+	- original version; created by h2xs 1.23 with options
+		-XA -n Gift
+
+0.02 Thur dec  1 18:26:51 WET 2005
+  - Parser 
+
+0.03 Sat dec 17 13:14:37 WET 2005
+  - Many bugs fixed
+

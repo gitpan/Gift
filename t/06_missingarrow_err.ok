@@ -1,0 +1,10 @@
+Error around lines 4 and 5!
+Illformed matching question. Expected ~ or ->.
+
+Last question processed:
+::caracterizar correspondencia::[html]Esta pregunta intenta averiguar que caracteriza una cuestion de matching. ¿Cuál es el número de flechas?
+Error is probably before or around:
+
+=cuatro -> 4
+}
+

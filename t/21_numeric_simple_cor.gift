@@ -1,0 +1,10 @@
+// question: 141  name: ejemplo numerica 
+::ejemplo numerica::[plain]2 m + 2 m \={
+  #3..5#cuatro
+}
+
+
+// question: 142  name: numerica con multiplicadores 
+::numerica con multiplicadores::[plain]3 km + 3 km \={
+  #5..7#seis km
+}

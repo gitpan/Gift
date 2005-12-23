@@ -1,0 +1,17 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT_FALSE' => undef,
+                                           'COMMENT_TRUE' => 'no. Pruebe de nuevo#cierto',
+                                           'ANSWER' => 'TRUE'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'Se escapa el corchete [ aqui y el ] cerrar?',
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'corchetes dentro'
+                                        }
+                        }, 'TRUEFALSE' )
+               ], 'Gift' );

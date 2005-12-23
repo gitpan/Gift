@@ -1,0 +1,40 @@
+Dado la sesión interactiva en el depurador:
+<P>
+<PRE>
+DB&lt;1&gt; $str = "world"<br>
+#              012345678901234567890123456789012<br>
+DB&lt;2&gt; $data = "hello worldjust another statement"<br>
+DB&lt;3&gt; $res = $data =~ m/$str/g<br>
+DB&lt;4&gt; x pos($data) <br>
+0  11<br>
+DB&lt;5&gt; $s = "hello"<br>
+DB&lt;6&gt; $res = $data =~ m/$s/g<br>
+DB&lt;7&gt; x pos($data) <br>
+</PRE>
+<P>
+¿Que se imprimira después del comando de la línea 7?
+{~0
+=undef
+~5
+}
+
+Rellene el código que falta para el recómputo de las
+direcciones finales de las cadenas constantes:
+<P>
+<PRE>
+  ... <br>
+  ##### En compile, despues de haber calculado las direcciones<br>
+  Tree::Transform::match_and_transform_list(<br>
+    NODES =&gt; $tree-&gt;\{STS\},<br>
+    PATTERN =&gt; sub \{ <br>
+      $_[0]-&gt;isa('<br>
+{
+=STR
+=%50%STRING
+}<br>
+')<br>
+    \},<br>
+    ACTION =&gt; sub \{ $_[0]-&gt;\{OFFSET\} += $global_address; \}<br>
+  );<br>
+</PRE>
+<P>

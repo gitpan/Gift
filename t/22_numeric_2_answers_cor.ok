@@ -1,0 +1,30 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'NUMERIC',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => [
+                                                         '1822',
+                                                         '0'
+                                                       ]
+                                         },
+                                         {
+                                           'TYPE' => 'NUMERIC',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => '50',
+                                           'ANSWER' => [
+                                                         '1822',
+                                                         '2'
+                                                       ]
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'When was Ulysses S. Grant born? ',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'NUMERIC' )
+               ], 'Gift' );

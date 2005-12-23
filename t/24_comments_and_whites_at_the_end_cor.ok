@@ -1,0 +1,17 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => '1-'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => '(No \\= or \\~ in the first answer) What is the charge on a CH<sub>3</sub>COO ion.',
+                                          'FORMAT' => undef,
+                                          'NAME' => undef
+                                        }
+                        }, 'SHORTANSWER' )
+               ], 'Gift' );

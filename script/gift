@@ -1,0 +1,49 @@
+#!/usr/bin/perl -I../lib -w
+use strict;
+use Gift;
+use Data::Dumper;
+
+die "Usage:\n$0 giftfile\n" unless (@ARGV == 1);
+
+my $result = Gift->GiftFromFile(@ARGV);
+print Dumper($result);
+
+=head1 gift - Parser for Moodle quiz GIFT format
+
+=head1 SYNOPSIS
+
+  gift file.gift
+
+=head1 DESCRIPTION
+  
+Moodle is an Open Source Learning Management System. It
+uses GIFT (which stands for General Import Format Technology) 
+to save and recover quiz questions to and from text files.
+
+This script parses a file in GIFT format. If correct, it dumps
+a reference to an object describing the questions
+otehrwise it reports about the errors.
+
+=head1 SEE ALSO
+
+Read the documentation in the C<Gift> module.
+
+=head1 AUTHOR
+
+This is a join work by
+Casiano Rodriguez Leon E<lt>casiano@ull.esE<gt>,
+Coromoto Leon Hernandez E<lt>cleon@ull.esE<gt>,
+and Luis Garcia Forte E<lt>lgforte@ull.esE<gt>,
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2005 by Casiano Rodriguez Leon, Coromoto Leon Hernandez
+and Luis Garcia Forte
+
+This script is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.4 or,
+at your option, any later version of Perl 5 you may have available.
+
+
+=cut
+

@@ -1,0 +1,406 @@
+$VAR1 = bless( [
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'bold'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'italic'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'a hyperlink'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'underlined'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'When a word stands out like <strong>this</strong> it is said to be ',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Text Formatting'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'italic'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'bold'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'underlined'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'a hyperlink'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'When a word looks like <em>this</em> it is said to be',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Leaning'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'font'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'emphasis'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'structure'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => '<p><font face="times new roman,times,serif">The way the characters look is said to be the</font></p>',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Face'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'uppercase'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'lowercase'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'THIS TYPE OF CASE IS KNOWN AS',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'CASE'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'uppercase'
+                                         },
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'lowercase'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'this type of case is known as',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'case'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'sans serif'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'serif'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => '<font face="arial,helvetica,sans-serif">A case like this which has no \'flicks\' is known as</font>',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Sans or Serif'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'sans serif'
+                                         },
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'serif'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => '<font face="georgia,times new roman,times,serif">A case like this which has \'flicks\' is known as</font>',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Serif or Sans'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'To make a key point stand out'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'To attract the attention of the audience'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'To signify something such as anger or greed'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'To make the presentation more interesting'
+                                         },
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'To hide blank spaces'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'Which of these is <strong>not</strong> a good reason for including colour?',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Using colour'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT_FALSE' => undef,
+                                           'COMMENT_TRUE' => 'It depends upon the size of the screen it will be shown on',
+                                           'ANSWER' => 'FALSE'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'The font size should always be less than 20 points',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Font size'
+                                        }
+                        }, 'TRUEFALSE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Because the font size usually has to be large so everyone in the room can read it'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'The screen the presentation is shown on is usually too small'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'The computer may not have enough memory'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'The font cannot be reduced'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => '<p>Presentations usually only contain a small amount of text on each slide.</p><p>Why do you think this is?</p>',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Ammount of text'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Bold'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Larger font'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Colour'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Underline'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Drop shadow'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Case'
+                                         },
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Reducing the font size'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'Which of the following is <strong>not</strong> a technique to make text stand out?',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Standing out'
+                                        }
+                        }, 'MULTIPLECHOICE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT_FALSE' => undef,
+                                           'COMMENT_TRUE' => undef,
+                                           'ANSWER' => 'TRUE'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'The palatte is the colours you have available',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Palette'
+                                        }
+                        }, 'TRUEFALSE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT_FALSE' => undef,
+                                           'COMMENT_TRUE' => 'Projectors usually produce a much lighter image',
+                                           'ANSWER' => 'FALSE'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'The presentation will look exactly the same on the projector as it does on the monitor',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Projection'
+                                        }
+                        }, 'TRUEFALSE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'COMMENT_FALSE' => undef,
+                                           'COMMENT_TRUE' => 'A graduated fill involves 2 or more colours which gradually merge',
+                                           'ANSWER' => 'FALSE'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'A graduated fill is a solid block of one colour',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Graduated'
+                                        }
+                        }, 'TRUEFALSE' ),
+                 bless( {
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'TYPE' => 'RIGHT',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Blue and Yellow'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Black and White'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Green and White'
+                                         },
+                                         {
+                                           'TYPE' => 'WRONG',
+                                           'COMMENT' => undef,
+                                           'WEIGHT' => undef,
+                                           'ANSWER' => 'Red and White'
+                                         }
+                                       ],
+                          'PRESTATE' => {
+                                          'PREFIX' => 'Which of the following colour schemes would be suitable for a presentation about Egglescliffe School',
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Colour schemes'
+                                        }
+                        }, 'MULTIPLECHOICE' )
+               ], 'Gift' );

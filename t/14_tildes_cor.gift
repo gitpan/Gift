@@ -1,0 +1,35 @@
+// question: 119  name: gramatica+acciones 
+::gramatica+acciones::[plain]Una gramática independiente del contexto aumentada con acciones en la que el orden de  evaluación de las acciones se muestra de manera explícita es:{
+  ~Una traducción dirigida por la sintáxis#Incorrecto
+  =Un esquema de traducción#Correcto
+  ~Un programa yacc#Incorrecto
+}
+
+
+// question: 120  name: pregunta con tildes en la respuesta 
+::pregunta con tildes en la respuesta::[plain]¿Que pasa si ponemos un tilde (\~) en la respuesta?{
+  =Pues que el tilde \~ se escapará
+  ~Pues que \~ no se escapara
+  ~Sea un \= sea una \~ se escapará
+}
+
+
+// question: 121  name: iguales escapados 
+::iguales escapados::Tengo unas llaves \{ y \} y un \= y un tilde \~ en el enunciado ¿Que ocurre?{
+  =Se escapa todo, 
+  ~No se escapa nada
+  ~Se escapa solo el \= pero no el resto
+  ~Se escapa solo el \~ pero no el resto
+  ~Se eccapan \{ y \} pero no el \=
+}
+
+
+// question: 122  name: con -> en medio 
+::con -> en medio::[plain]Que ocurre cuando hay flechas -> en medio del texto y de las parejas?{
+  =flecha final - > -> flecha ->
+  =- > principio -> -> flecha
+  =en - > medio -> flecha en -> medio
+}
+
+
+

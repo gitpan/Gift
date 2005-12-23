@@ -1,0 +1,34 @@
+Gift version 0.03
+=================
+
+INSTALLATION
+
+To install this module first install the
+Parse::Yapp module. 
+You can do it as administrator using the following command:
+
+perl -MCPAN -e install Parse::Yapp
+
+Next:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires Parse::Yapp
+
+
+COPYRIGHT AND LICENCE
+Copyright (C) 2005 by
+Casiano Rodriguez-Leon <casiano@ull.es>
+Coromoto Leon-Hernandez
+Luis Garcia-Forte
+Universidad de La Laguna
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.4 or,
+at your option, any later version of Perl 5 you may have available.
+
