@@ -1,30 +1,30 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Grant is '
+                                        },
                           'POSTSTATE' => ' in Grant\'s tomb.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'buried'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'entombed'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'living'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Grant is ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' )
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' )
                ], 'Gift' );

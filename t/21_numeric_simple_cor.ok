@@ -1,38 +1,38 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'ejemplo numerica',
+                                          'PREFIX' => '2 m + 2 m \\='
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERICRANGE',
                                            'COMMENT' => 'cuatro',
+                                           'TYPE' => 'NUMERICRANGE',
                                            'ANSWER' => [
                                                          '3',
                                                          '5'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => '2 m + 2 m \\=',
-                                          'FORMAT' => 'plain',
-                                          'NAME' => 'ejemplo numerica'
-                                        }
-                        }, 'NUMERIC' ),
+                                       ]
+                        }, 'Gift::NUMERIC' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'numerica con multiplicadores',
+                                          'PREFIX' => '3 km + 3 km \\='
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERICRANGE',
                                            'COMMENT' => 'seis km',
+                                           'TYPE' => 'NUMERICRANGE',
                                            'ANSWER' => [
                                                          '5',
                                                          '7'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => '3 km + 3 km \\=',
-                                          'FORMAT' => 'plain',
-                                          'NAME' => 'numerica con multiplicadores'
-                                        }
-                        }, 'NUMERIC' )
+                                       ]
+                        }, 'Gift::NUMERIC' )
                ], 'Gift' );

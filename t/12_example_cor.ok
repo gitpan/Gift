@@ -1,1075 +1,1075 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Grant'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Jefferson'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'no one'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Grant is '
+                                        },
                           'POSTSTATE' => ' in Grant\'s tomb.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'buried'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'entombed'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'living'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Grant is ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Grant is buried in Grant\'s tomb.'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'COMMENT_FALSE' => undef,
-                                           'COMMENT_TRUE' => undef,
-                                           'ANSWER' => 'FALSE'
+                                           'ANSWER' => 'FALSE',
+                                           'COMMENT_TRUE' => undef
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Grant is buried in Grant\'s tomb.',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'TRUEFALSE' ),
+                                       ]
+                        }, 'Gift::TRUEFALSE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'no one'
                                          },
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'nobody'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'When was Ulysses S. Grant born?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '1822',
                                                          '1'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'When was Ulysses S. Grant born?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' ),
+                                       ]
+                        }, 'Gift::NUMERIC' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Grant'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Jefferson'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'no one'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Grant is '
+                                        },
                           'POSTSTATE' => ' in Grant\'s tomb.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'buried'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'entombed'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'living'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Grant is ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'The American holiday of Thanksgiving is celebrated on the '
+                                        },
                           'POSTSTATE' => ' Thursday of November.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'second'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'third'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'fourth'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'The American holiday of Thanksgiving is celebrated on the ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Japanese characters originally came from what country? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'India'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'China'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Korea'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Egypt'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Japanese characters originally came from what country? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'no one'
                                          },
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'nobody'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Two plus two equals '
+                                        },
                           'POSTSTATE' => '.',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'four'
                                          },
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => '4'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Two plus two equals ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Grant is buried in Grant\'s tomb.'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'COMMENT_FALSE' => undef,
-                                           'COMMENT_TRUE' => undef,
-                                           'ANSWER' => 'FALSE'
+                                           'ANSWER' => 'FALSE',
+                                           'COMMENT_TRUE' => undef
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Grant is buried in Grant\'s tomb.',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'TRUEFALSE' ),
+                                       ]
+                        }, 'Gift::TRUEFALSE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'The sun rises in the east.'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'COMMENT_FALSE' => undef,
-                                           'COMMENT_TRUE' => undef,
-                                           'ANSWER' => 'TRUE'
+                                           'ANSWER' => 'TRUE',
+                                           'COMMENT_TRUE' => undef
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'The sun rises in the east.',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'TRUEFALSE' ),
+                                       ]
+                        }, 'Gift::TRUEFALSE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Matching Question. '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'SECOND' => 'subanswer1',
-                                           'FIRST' => 'subquestion1'
+                                           'FIRST' => 'subquestion1',
+                                           'SECOND' => 'subanswer1'
                                          },
                                          {
-                                           'SECOND' => 'subanswer2',
-                                           'FIRST' => 'subquestion2'
+                                           'FIRST' => 'subquestion2',
+                                           'SECOND' => 'subanswer2'
                                          },
                                          {
-                                           'SECOND' => 'subanswer3',
-                                           'FIRST' => 'subquestion3'
+                                           'FIRST' => 'subquestion3',
+                                           'SECOND' => 'subanswer3'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Matching Question. ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MATCH' ),
+                                       ]
+                        }, 'Gift::MATCH' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Match the following countries with their corresponding capitals. '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'SECOND' => 'Ottawa',
-                                           'FIRST' => 'Canada'
+                                           'FIRST' => 'Canada',
+                                           'SECOND' => 'Ottawa'
                                          },
                                          {
-                                           'SECOND' => 'Rome',
-                                           'FIRST' => 'Italy'
+                                           'FIRST' => 'Italy',
+                                           'SECOND' => 'Rome'
                                          },
                                          {
-                                           'SECOND' => 'Tokyo',
-                                           'FIRST' => 'Japan'
+                                           'FIRST' => 'Japan',
+                                           'SECOND' => 'Tokyo'
                                          },
                                          {
-                                           'SECOND' => 'New Delhi',
-                                           'FIRST' => 'India'
+                                           'FIRST' => 'India',
+                                           'SECOND' => 'New Delhi'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Match the following countries with their corresponding capitals. ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MATCH' ),
+                                       ]
+                        }, 'Gift::MATCH' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'When was Ulysses S. Grant born? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '1822',
                                                          undef
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'When was Ulysses S. Grant born? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' ),
+                                       ]
+                        }, 'Gift::NUMERIC' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'What is the value of pi (to 3 decimal places)? '
+                                        },
                           'POSTSTATE' => '.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '3.1415',
                                                          '0.0005'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'What is the value of pi (to 3 decimal places)? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' ),
+                                       ]
+                        }, 'Gift::NUMERIC' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'What is the value of pi (to 3 decimal places)? '
+                                        },
                           'POSTSTATE' => '.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERICRANGE',
                                            'COMMENT' => undef,
+                                           'TYPE' => 'NUMERICRANGE',
                                            'ANSWER' => [
                                                          '3.141',
                                                          '3.142'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'What is the value of pi (to 3 decimal places)? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' ),
+                                       ]
+                        }, 'Gift::NUMERIC' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'What is the value of pi (to 3 decimal places)? '
+                                        },
                           'POSTSTATE' => '.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '3.1415',
                                                          undef
                                                        ]
                                          },
                                          {
-                                           'TYPE' => 'NUMERICRANGE',
                                            'COMMENT' => undef,
+                                           'TYPE' => 'NUMERICRANGE',
                                            'ANSWER' => [
                                                          '3.141',
                                                          '3.142'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'What is the value of pi (to 3 decimal places)? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' ),
+                                       ]
+                        }, 'Gift::NUMERIC' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'When was Ulysses S. Grant born? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '1822',
                                                          '0'
                                                        ]
                                          },
                                          {
-                                           'TYPE' => 'NUMERIC',
+                                           'WEIGHT' => 50,
                                            'COMMENT' => undef,
-                                           'WEIGHT' => '50',
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '1822',
                                                          '2'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'When was Ulysses S. Grant born? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' ),
+                                       ]
+                        }, 'Gift::NUMERIC' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'What\'s 2 plus 2? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '4',
                                                          undef
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'What\'s 2 plus 2? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' ),
+                                       ]
+                        }, 'Gift::NUMERIC' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Kanji Origins',
+                                          'PREFIX' => 'Japanese characters originally
+came from what country? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'China'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Japanese characters originally
-came from what country? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Kanji Origins'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Thanksgiving Date',
+                                          'PREFIX' => 'The American holiday of Thanksgiving is 
+celebrated on the '
+                                        },
                           'POSTSTATE' => ' Thursday of November.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'second'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'third'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'fourth'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'The American holiday of Thanksgiving is 
-celebrated on the ',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Thanksgiving Date'
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'What\'s the answer to this multiple-choice question?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => 'feedback comment on the wrong answer',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'feedback comment on the wrong answer',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'wrong answer'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => 'feedback comment on this wrong answer',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'feedback comment on this wrong answer',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'another wrong answer'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => 'Very good!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Very good!',
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'right answer'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'What\'s the answer to this multiple-choice question?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => 'excellent answer!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'excellent answer!',
                                            'ANSWER' => 'no one'
                                          },
                                          {
-                                           'COMMENT' => 'excellent answer!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'excellent answer!',
                                            'ANSWER' => 'nobody'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
-                          'POSTSTATE' => '',
-                          'ANSWERS' => [
-                                         {
-                                           'COMMENT' => 'excellent answer!',
-                                           'WEIGHT' => undef,
-                                           'ANSWER' => 'no one'
-                                         },
-                                         {
-                                           'COMMENT' => 'excellent answer!',
-                                           'WEIGHT' => undef,
-                                           'ANSWER' => 'nobody'
-                                         }
-                                       ],
                           'PRESTATE' => {
-                                          'PREFIX' => 'Who\'s buried in **Grant\'s tomb**?',
                                           'FORMAT' => 'markdown',
-                                          'NAME' => undef
-                                        }
-                        }, 'SHORTANSWER' ),
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Who\'s buried in **Grant\'s tomb**?'
+                                        },
+                          'POSTSTATE' => '',
+                          'ANSWERS' => [
+                                         {
+                                           'WEIGHT' => undef,
+                                           'COMMENT' => 'excellent answer!',
+                                           'ANSWER' => 'no one'
+                                         },
+                                         {
+                                           'WEIGHT' => undef,
+                                           'COMMENT' => 'excellent answer!',
+                                           'ANSWER' => 'nobody'
+                                         }
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Grant is buried in Grant\'s tomb.'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'COMMENT_FALSE' => undef,
-                                           'COMMENT_TRUE' => 'No one is buried in Grant\'s tomb.',
-                                           'ANSWER' => 'FALSE'
+                                           'ANSWER' => 'FALSE',
+                                           'COMMENT_TRUE' => 'No one is buried in Grant\'s tomb.'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Grant is buried in Grant\'s tomb.',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'TRUEFALSE' ),
+                                       ]
+                        }, 'Gift::TRUEFALSE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Difficult question.'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'wrong answer'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
+                                           'WEIGHT' => 50,
                                            'COMMENT' => undef,
-                                           'WEIGHT' => '50',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'half credit answer'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'full credit answer'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Difficult question.',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Jesus\' hometown',
+                                          'PREFIX' => 'Jesus Christ was from '
+                                        },
                           'POSTSTATE' => '.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => 'This was an important city, but the wrong answer.',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'This was an important city, but the wrong answer.',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Jerusalem'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
+                                           'WEIGHT' => 25,
                                            'COMMENT' => 'He was born here, but not raised here.',
-                                           'WEIGHT' => '25',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Bethlehem'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
+                                           'WEIGHT' => 50,
                                            'COMMENT' => 'You need to be more specific.',
-                                           'WEIGHT' => '50',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Galilee'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => 'Yes! That\'s right!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Yes! That\'s right!',
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'Nazareth'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Jesus Christ was from ',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Jesus\' hometown'
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Jesus\' hometown',
+                                          'PREFIX' => ' Jesus Christ was from '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => 'Yes! That\'s right!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Yes! That\'s right!',
                                            'ANSWER' => 'Nazareth'
                                          },
                                          {
+                                           'WEIGHT' => 75,
                                            'COMMENT' => 'Right, but misspelled.',
-                                           'WEIGHT' => '75',
                                            'ANSWER' => 'Nazereth'
                                          },
                                          {
+                                           'WEIGHT' => 25,
                                            'COMMENT' => 'He was born here, but not raised here.',
-                                           'WEIGHT' => '25',
                                            'ANSWER' => 'Bethlehem'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => ' Jesus Christ was from ',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Jesus\' hometown'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'What two people are entombed in Grant\'s tomb? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'No one'
                                          },
                                          {
+                                           'WEIGHT' => 50,
                                            'COMMENT' => undef,
-                                           'WEIGHT' => '50',
                                            'ANSWER' => 'Grant'
                                          },
                                          {
+                                           'WEIGHT' => 50,
                                            'COMMENT' => undef,
-                                           'WEIGHT' => '50',
                                            'ANSWER' => 'Grant\'s wife'
                                          },
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'Grant\'s father'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'What two people are entombed in Grant\'s tomb? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLEANSWER' ),
+                                       ]
+                        }, 'Gift::MULTIPLEANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'What two people are entombed in Grant\'s tomb? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => -50,
                                            'COMMENT' => undef,
-                                           'WEIGHT' => '-50',
                                            'ANSWER' => 'No one'
                                          },
                                          {
+                                           'WEIGHT' => 50,
                                            'COMMENT' => undef,
-                                           'WEIGHT' => '50',
                                            'ANSWER' => 'Grant'
                                          },
                                          {
+                                           'WEIGHT' => 50,
                                            'COMMENT' => undef,
-                                           'WEIGHT' => '50',
                                            'ANSWER' => 'Grant\'s wife'
                                          },
                                          {
+                                           'WEIGHT' => -50,
                                            'COMMENT' => undef,
-                                           'WEIGHT' => '-50',
                                            'ANSWER' => 'Grant\'s father'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'What two people are entombed in Grant\'s tomb? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLEANSWER' ),
+                                       ]
+                        }, 'Gift::MULTIPLEANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Which answer equals 5? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
-                                           'WEIGHT' => undef,
                                            'ANSWER' => ' \\= 2 + 2'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => ' \\= 2 + 3'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => ' \\= 2 + 4'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Which answer equals 5? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'GIFT Control Characters',
+                                          'PREFIX' => '
+Which of the following is NOT a control character for the GIFT import format? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => ' \\~ is a control character.',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => ' \\~ is a control character.',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => ' \\~'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => ' \\= is a control character.',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => ' \\= is a control character.',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => ' \\='
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => ' \\# is a control character.',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => ' \\# is a control character.',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => ' \\#'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => ' \\{ is a control character.',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => ' \\{ is a control character.',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => ' \\{'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => ' \\} is a control character.',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => ' \\} is a control character.',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => ' \\}'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
+                                           'WEIGHT' => undef,
                                            'COMMENT' => ' Correct! \\\\ (backslash) is not a control character. BUT,
               it is used to escape the control characters. So, to specify
               a literal backslash, you must escape it with a backslash
               (as shown in this example).',
-                                           'WEIGHT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => ' \\\\'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => '
-Which of the following is NOT a control character for the GIFT import format? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'GIFT Control Characters'
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Grant'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Jefferson'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'no one'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Grant is '
+                                        },
                           'POSTSTATE' => ' in Grant\'s tomb.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'buried'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'entombed'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'living'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Grant is ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Grant is buried in Grant\'s tomb.'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'COMMENT_FALSE' => undef,
-                                           'COMMENT_TRUE' => undef,
-                                           'ANSWER' => 'FALSE'
+                                           'ANSWER' => 'FALSE',
+                                           'COMMENT_TRUE' => undef
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Grant is buried in Grant\'s tomb.',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'TRUEFALSE' ),
+                                       ]
+                        }, 'Gift::TRUEFALSE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'no one'
                                          },
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'nobody'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'When was Ulysses S. Grant born?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '1822',
                                                          '5'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'When was Ulysses S. Grant born?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' ),
+                                       ]
+                        }, 'Gift::NUMERIC' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Match the following countries with their corresponding
+capitals.'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'SECOND' => 'Ottawa',
-                                           'FIRST' => 'Canada'
+                                           'FIRST' => 'Canada',
+                                           'SECOND' => 'Ottawa'
                                          },
                                          {
-                                           'SECOND' => 'Rome',
-                                           'FIRST' => 'Italy'
+                                           'FIRST' => 'Italy',
+                                           'SECOND' => 'Rome'
                                          },
                                          {
-                                           'SECOND' => 'Tokyo',
-                                           'FIRST' => 'Japan'
+                                           'FIRST' => 'Japan',
+                                           'SECOND' => 'Tokyo'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Match the following countries with their corresponding
-capitals.',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MATCH' ),
+                                       ]
+                        }, 'Gift::MATCH' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Grant\'s Tomb',
+                                          'PREFIX' => 'Grant is '
+                                        },
                           'POSTSTATE' => ' in Grant\'s tomb.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => 'No one is buried there.',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'No one is buried there.',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'buried'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => 'Right answer!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Right answer!',
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'entombed'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => 'We hope not!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'We hope not!',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'living'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Grant is ',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Grant\'s Tomb'
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Difficult multiple choice question.'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => 'comment on wrong answer',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'comment on wrong answer',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'wrong answer'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
+                                           'WEIGHT' => 50,
                                            'COMMENT' => 'comment on answer',
-                                           'WEIGHT' => '50',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'half credit answer'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => 'well done!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'well done!',
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'full credit answer'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Difficult multiple choice question.',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Jesus\' hometown (Short answer ex.)',
+                                          'PREFIX' => ' Jesus Christ was from '
+                                        },
                           'POSTSTATE' => '.',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => 'Yes! That\'s right!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Yes! That\'s right!',
                                            'ANSWER' => 'Nazareth'
                                          },
                                          {
+                                           'WEIGHT' => 75,
                                            'COMMENT' => 'Right, but misspelled.',
-                                           'WEIGHT' => '75',
                                            'ANSWER' => 'Nazereth'
                                          },
                                          {
+                                           'WEIGHT' => 25,
                                            'COMMENT' => 'He was born here, but not raised here.',
-                                           'WEIGHT' => '25',
                                            'ANSWER' => 'Bethlehem'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => ' Jesus Christ was from ',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Jesus\' hometown (Short answer ex.)'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Numerical example',
+                                          'PREFIX' => '
+When was Ulysses S. Grant born? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => 'Correct! 100% credit',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Correct! 100% credit',
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '1822',
                                                          '0'
                                                        ]
                                          },
                                          {
-                                           'TYPE' => 'NUMERIC',
+                                           'WEIGHT' => 50,
                                            'COMMENT' => 'He was born in 1822.
                   You get 50% credit for being close.',
-                                           'WEIGHT' => '50',
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '1822',
                                                          '2'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => '
-When was Ulysses S. Grant born? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Numerical example'
-                                        }
-                        }, 'NUMERIC' )
+                                       ]
+                        }, 'Gift::NUMERIC' )
                ], 'Gift' );

@@ -1,30 +1,30 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'When was Ulysses S. Grant born? '
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '1822',
                                                          '0'
                                                        ]
                                          },
                                          {
-                                           'TYPE' => 'NUMERIC',
+                                           'WEIGHT' => 50,
                                            'COMMENT' => undef,
-                                           'WEIGHT' => '50',
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '1822',
                                                          '2'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'When was Ulysses S. Grant born? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' )
+                                       ]
+                        }, 'Gift::NUMERIC' )
                ], 'Gift' );

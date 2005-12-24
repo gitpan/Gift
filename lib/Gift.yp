@@ -3,7 +3,7 @@
 #
 #Note for the Authors: Look at: /home/webs/pcgull/moodle/datos/12/cuestionario in zion
 
-our $VERSION = '0.3';
+our $VERSION = '0.4';
 
 # The standalone parser in this module was built using the Parse::Yapp 
 # distribution (available from CPAN). The author of Parse::Yapp is Francois Desarmenien.
@@ -31,6 +31,10 @@ my $numwarningslimit = 3;
 my $numwarnings = 0;
 my $prestate; 
 
+sub trim_end {
+  defined($_) and s/\s*$// for (@_);
+}
+
 sub set_error {
   my ($parser, $message) = @_;
   $parser->YYData->{ERRMSG} = $message;
@@ -46,26 +50,26 @@ sub build_problem {
   my $answer = $answers[0];
 
   # warning! the order is important in the following statements
-  return bless $problem, 'MATCH' if exists($answer->{FIRST}); 
+  return bless $problem, 'Gift::MATCH' if exists($answer->{FIRST}); 
   if ($answer->{TYPE} eq 'TRUEFALSE') {
     delete($answer->{TYPE}); # now is redundant
-    return bless $problem, 'TRUEFALSE' 
+    return bless $problem, 'Gift::TRUEFALSE' 
   }
-  return bless $problem, 'NUMERIC' if ($answer->{TYPE} eq 'NUMERIC') or ($answer->{TYPE} eq 'NUMERICRANGE'); 
+  return bless $problem, 'Gift::NUMERIC' if ($answer->{TYPE} eq 'NUMERIC') or ($answer->{TYPE} eq 'NUMERICRANGE'); 
   if ($is_shortanswer) {
 
     for $answer (@answers) {
       delete($answer->{TYPE});
     }
-    return bless $problem, 'SHORTANSWER' 
+    return bless $problem, 'Gift::SHORTANSWER' 
   }
   if ($is_multipleanswer) {
     for $answer (@answers) {
       delete($answer->{TYPE});
     }
-    return bless $problem, 'MULTIPLEANSWER' 
+    return bless $problem, 'Gift::MULTIPLEANSWER' 
   }
-  return bless $problem, 'MULTIPLECHOICE' if ($answer->{TYPE} =~ m{RIGHT|WRONG}); 
+  return bless $problem, 'Gift::MULTIPLECHOICE' if ($answer->{TYPE} =~ m{RIGHT|WRONG}); 
   die 'Fatal Internal Error. Contact the authors.',"/n";
 }
 
@@ -112,7 +116,9 @@ poststate:           { '' } # empty
 
 sub Warning {
   my $parser = shift;
-  my $Err = (shift or "Warning");
+
+  my ($Err, $message) = @_;
+  $parser->set_error($message);
 
   $numwarnings++;
   return if $numwarnings >= $numwarningslimit;
@@ -145,8 +151,9 @@ sub Warning {
 }
 
 sub Error {
+  my ($parser, $message) = @_;
 
-  $_[0]->Warning('Error');
+  $parser->Warning('Error', $message);
   die "\n";
 }
 
@@ -166,8 +173,7 @@ sub Lex_newquestion {
     $prestate = $1;
     defined($prestate) and 
       $input = "$prestate$input";
-    $parser->set_error("Curly bracket ('{') expected. ");
-    $parser->Error();
+    $parser->Error("Curly bracket ('{') expected. ");
   };
   $lineno += &countlines($&);
   $prestate = $1;
@@ -182,114 +188,109 @@ sub Lex_newquestion {
   return ('PRESTATE', { NAME => $2, FORMAT => $5, PREFIX => $6 });
 }
 
-sub Lex_inside_answers {
+sub parse_end_of_answer {
   my $parser = shift;
 
-  $input =~ s/\A\s+//; # Inside the answer section white spaces between answers can be skipped 
+  $lineno += &countlines($&);
+  if ($inside_match and ($answerno <= 2)) {
+    $parser->Error("A match question must have at least three pairs");
+  }
+  if ($weightsum > 100) {
+    $parser->Error("Sum of weights is ${weightsum}% > 100%.");
+  }
+  if ($inside_truefalse and ($answerno > 1)) {
+    $parser->Error("A TRUE-FALSE question can have only one answer.");
+  }
+  if (!$inside_numeric and !$inside_match) {
+    $is_shortanswer = ($answerno == $numright);
+    $is_multipleanswer = (($numright == 0) and $num_positive_weights);
+    
+  }
+  $inside_answers = $inside_match = $inside_numeric = $answerno = 
+  $numright = $weightsum = $num_positive_weights = $inside_truefalse = 0;
+  $post_state = 1;
+  return ('}', '}');
+}
+
+# Inside the answer section white spaces between answers can be skipped 
+sub skip_whites {
+  $input =~ s/\A\s+//; 
   $lineno += &countlines($&) if defined($&);
-  if ($input =~ s/\A\s*}//) { # CLOSING } : END OF ANSWERS SECTION
+}
+
+sub parse_numeric {
+  my $parser = shift;
+
+  if ($input =~ s/\A          # range type {#3.141..3.142}
+                  =?
+                  (%\s*(-?\d+)\s*%)?
+                  (\d+(\.\d+)?)
+                  \.\.
+                  (\d+(\.\d+)?)
+                  (\s*\#((\\.|[^=~}])*))?
+                  //x) {  # range
+    my ($weight, $firstnumber, $secondnumber, $comment) = ($2, $3, $5, $8); 
     $lineno += &countlines($&);
-    if ($inside_match and ($answerno <= 2)) {
-      $parser->set_error("A match question must have at least three pairs");
-      $parser->Error();
-    }
-    if ($weightsum > 100) {
-      $parser->set_error("Sum of weights is ${weightsum}% > 100%.");
-      $parser->Error();
-    }
-    if ($inside_truefalse and ($answerno > 1)) {
-      $parser->set_error("A TRUE-FALSE question can have only one answer.");
-      $parser->Error();
-    }
-    if (!$inside_numeric and !$inside_match) {
-      $is_shortanswer = ($answerno == $numright);
-      $is_multipleanswer = (($numright == 0) and $num_positive_weights);
-      
-    }
-    $inside_answers = $inside_match = $inside_numeric = $answerno = 
-    $numright = $weightsum = $num_positive_weights = $inside_truefalse = 0;
-    $post_state = 1;
-    return ('}', '}');
+    $weightsum += $weight if defined($weight);
+    &trim_end($comment); # trim final spaces in comment
+    return ('ANSWER', 
+            { TYPE  => 'NUMERICRANGE',
+              ANSWER => [ $firstnumber, $secondnumber ], 
+              COMMENT => $comment
+            }
+           );
   }
-  elsif ($inside_numeric) {
-    if ($input =~ s/\A          # range type {#3.141..3.142}
-                    =?
-                    (%\s*(-?\d+)\s*%)?
-                    (\d+(\.\d+)?)
-                    \.\.
-                    (\d+(\.\d+)?)
-                    (\s*\#((\\.|[^=~}])*))?
-                    //x) {  # range
-      my ($weight, $firstnumber, $secondnumber, $comment) = ($2, $3, $5, $8); 
-      $lineno += &countlines($&);
-      $weightsum += $weight if defined($weight);
-      $comment =~ s/\s*$// if defined($comment); # trim final spaces in comment
-      return ('ANSWER', 
-              { TYPE  => 'NUMERICRANGE',
-                ANSWER => [ $firstnumber, $secondnumber ], 
-                COMMENT => $comment
-              }
-             );
-    }
-    elsif ($input =~ s/\A
-                       =?
-                       (%\s*(-?\d+)\s*%)?
-                       (\d+(\.\d+)?)
-                       (:(\d+(\.\d+)?))?
-                       (\s*\#((\\.|[^=~}])*))?
-                       //x) { 
-      my ($weight, $number, $error, $comment) = ($2, $3, $6, $9);  
-      $lineno += &countlines($&);
-      $weightsum += $weight if defined($weight);
-      $comment =~ s/\s*$// if defined($comment); # trim final spaces in comment
-      return ('ANSWER', 
-              { TYPE  => 'NUMERIC',
-                WEIGHT => $weight,
-                ANSWER => [$number, $error], 
-                COMMENT => $comment
-              }
-             );
-    }
-    else {
-      $parser->set_error("Expecting a numeric answer or }");
-      $parser->Error();
-    }
-  }
-  elsif ($input =~ s{\A(
-                       (TR?U?E?)|(FA?L?S?E?)) # answer
-                       (\#([^\}]*))?        # comment for the first answer
-                       \s*
-                       (\#([^\}]*))?}      # comment for the second answer
-                  {}ix) { # truefalse question
+  elsif ($input =~ s/\A
+                     =?
+                     (%\s*(-?\d+)\s*%)?
+                     (\d+(\.\d+)?)
+                     (:(\d+(\.\d+)?))?
+                     (\s*\#((\\.|[^=~}])*))?
+                     //x) { 
+    my ($weight, $number, $error, $comment) = ($2, $3, $6, $9);  
     $lineno += &countlines($&);
-    my ($token, $commenttrue, $commentfalse) = ($1, $5, $7);
-    $commenttrue =~ s/\s*$// if defined($commenttrue); # trim final spaces in comment
-    $commentfalse =~ s/\s*$// if defined($commentfalse); # trim final spaces in comment
-    $answerno++;
-    $inside_truefalse = 1;
-    if ($answerno > 1) {
-      $parser->set_error("A True-False question admits only one answer.");
-      $parser->Error();
-    }
-    return ($token =~ m{T}i)? 
-       ('ANSWER', { TYPE => 'TRUEFALSE',
-                  ANSWER => 'TRUE', 
-                  COMMENT_TRUE => $commenttrue, 
-                  COMMENT_FALSE => $commentfalse
-                }) : 
-       ('ANSWER', { TYPE => 'TRUEFALSE',
-                  ANSWER => 'FALSE', 
-                  COMMENT_TRUE => $commenttrue, 
-                  COMMENT_FALSE => $commentfalse
-                 });
+    $weightsum += $weight if defined($weight);
+    &trim_end($comment);
+    return ('ANSWER', 
+            { TYPE  => 'NUMERIC',
+              WEIGHT => $weight,
+              ANSWER => [$number, $error], 
+              COMMENT => $comment
+            }
+           );
   }
-  elsif ($input =~ s/\A\s*                # single short answer
-                      (%\s*(-?\d+)\s*%)?  # weight
-                      ((\\.|[^~=\}\#])+)  # the answer
-                      (\#((\\.|[^=~}])*))?  # feedback
-                      \s*}        # the end of the answer
-                     /}/x            
-          ) {
+  else {
+    $parser->Error("Expecting a numeric answer or }");
+  }
+}
+
+sub parse_truefalse {
+  my $parser = shift;
+
+  $lineno += &countlines($&);
+  my ($token, $commenttrue, $commentfalse) = ($1, $5, $7);
+  &trim_end($commenttrue, $commentfalse);
+  $answerno++;
+  $inside_truefalse = 1;
+  if ($answerno > 1) {
+    $parser->Error("A True-False question admits only one answer.");
+  }
+  return ($token =~ m{T}i)? 
+     ('ANSWER', { TYPE => 'TRUEFALSE',
+                ANSWER => 'TRUE', 
+                COMMENT_TRUE => $commenttrue, 
+                COMMENT_FALSE => $commentfalse
+              }) : 
+     ('ANSWER', { TYPE => 'TRUEFALSE',
+                ANSWER => 'FALSE', 
+                COMMENT_TRUE => $commenttrue, 
+                COMMENT_FALSE => $commentfalse
+               });
+}
+
+sub parse_single_short_answer {
+  my $parser = shift;
+
     # Single Answer: Short answer
     # ... If there is only one correct Short Answer, it may be written without
     # the equal sign prefix, as long as it cannot be confused as True-False.
@@ -299,8 +300,7 @@ sub Lex_inside_answers {
       $weightsum += $weight;
       $num_positive_weights++ if $weight > 0;
     }
-    $answer =~ s/\s*$//; # trim final spaces in answer
-    $comment =~ s/\s*$// if defined($comment); # trim final spaces in comment
+    &trim_end($answer, $comment);
     $answerno++;
     $numright++;
     return ('ANSWER', 
@@ -310,69 +310,104 @@ sub Lex_inside_answers {
               COMMENT => $comment 
             }
            );
-  }
-  elsif ($input =~ s/\A\s*
-                      ([~=])            # right or wrong answer
-                      (%\s*(-?\d+)\s*%)?  # weight
-                      ((\\.|[^~=\}\#])+)  # the answer
-                      (\#((\\.|[^=~}])*))?  # It seems carriage returns aren't allowed 
-                                        #   at least in plain format ?
-                      \s*        # the end of the answer
+}
+
+sub parse_match {
+  my $parser = shift;
+  my ($weight, $comment) = @_;
+
+   if ((!$inside_match) and ($answerno > 1)) {
+     $parser->Error(
+      "Inside a Matching question all the answers have to match the format:\na -> b\nAn answer previous to ${answerno}th answer does not have an arrow."
+     );
+   }
+   $inside_match = 1; 
+   # Warn if weights 
+   $parser->Warning(
+     'Warning', 
+     "Matching questions do not support feedback or percentage answer weights."
+   ) if (defined($weight) or defined($comment));
+   return ('ANSWER', { FIRST => $1, SECOND => $2, });
+}
+
+sub update_weights {
+  my $weight = shift;
+
+  $weightsum += $weight;
+  $num_positive_weights++ if $weight > 0;
+}
+
+sub parse_right_or_wrong {
+  my $parser = shift;
+  my ($type, $weight, $answer, $comment) = @_;
+
+  $lineno += &countlines($&);
+  &update_weights($weight) if (defined($weight));
+  &trim_end($answer, $comment);
+  $answerno++;
+  $parser->Error("Illformed matching question. Expected ~ or ->.") 
+    if ($inside_match and (($type eq '~') or ($answer !~ m{(.+?)\s*->\s*(.+)})));
+
+  if ($type eq '=') {
+
+   # lazy operator +?: first arrow appearance. Spaces are required?
+   return $parser->parse_match($weight, $comment) if ($answer =~ m{(.+?)\s*->\s*(.+)});
+
+   $numright++;
+   return ('ANSWER', 
+           { TYPE => 'RIGHT',
+             WEIGHT => $weight, 
+             ANSWER => $answer, 
+             COMMENT => $comment 
+           }
+          );
+  } # end of ($type eq '=')
+
+  return ('ANSWER', 
+          { TYPE => 'WRONG',
+            WEIGHT => $weight, 
+            ANSWER => $answer, 
+            COMMENT => $comment 
+          }
+         );
+}
+
+sub Lex_inside_answers {
+  my $parser = shift;
+
+  &skip_whites();
+
+  return $parser->parse_end_of_answer() if ($input =~ s/\A\s*}//);  # CLOSING }
+
+  return $parser->parse_numeric() if ($inside_numeric);
+  
+  return $parser->parse_truefalse() if 
+                  ($input =~ s{\A(
+                       (TR?U?E?)|(FA?L?S?E?)) # answer
+                       (\#([^\}]*))?          # comment for the first answer
+                       \s*
+                       (\#([^\}]*))?}         # comment for the second answer
+                  {}ix);
+
+  return $parser->parse_single_short_answer() if 
+       ($input =~ s/\A\s*       # single short answer
+                      (%\s*(-?\d+)\s*%)?   # weight
+                      ((\\.|[^~=\}\#])+)   # the answer
+                      (\#((\\.|[^=~}])*))? # feedback
+                      \s*}                 # the end of the answer: }
+                  /}/x                     # give back the }
+       );
+
+  return $parser->parse_right_or_wrong($1, $3, $4, $7) if 
+         ($input =~ s/\A\s*
+                      ([~=])               # right or wrong answer
+                      (%\s*(-?\d+)\s*%)?   # weight
+                      ((\\.|[^~=\}\#])+)   # the answer
+                      (\#((\\.|[^=~}])*))? # feedback
+                      \s*                  # the end of the answer
                      //x            
-          ) {
-    my ($type, $weight, $answer, $comment) = ($1, $3, $4, $7);
-    $lineno += &countlines($&);
-    if (defined($weight)) {
-      $weightsum += $weight;
-      $num_positive_weights++ if $weight > 0;
-    }
-    $answer =~ s/\s*$//; # trim final spaces in answer
-    $comment =~ s/\s*$// if defined($comment); # trim final spaces in comment
-    $answerno++;
-    if ($inside_match and (($type eq '~') or ($answer !~ m{(.+?)\s*->\s*(.+)}))) {
-       $parser->set_error("Illformed matching question. Expected ~ or ->.");
-       $parser->Error();
-    }
-    if ($type eq '=') {
-        # lazy operator +?: first arrow appearance. Spaces are required?
-     if ($answer =~ m{(.+?)\s*->\s*(.+)}) { # MATCH answer
-       if ((!$inside_match) and ($answerno > 1)) {
-         $parser->set_error(
-          "Inside a Matching question all the answers have to match the format:\na -> b\nAn answer previous to ${answerno}th answer does not have an arrow."
-         );
-         $parser->Error();
-       }
-       $inside_match = 1; 
-       # Warn if weights 
-       if (defined($weight) or defined($comment)) {
-         $parser->set_error(
-         "Matching questions do not support feedback or percentage answer weights."
-         );
-         $parser->Warning();
-       }
-       return ('ANSWER', { FIRST => $1, SECOND => $2, });
-     }
-     $numright++;
-     return ('ANSWER', 
-             { TYPE => 'RIGHT',
-               WEIGHT => $weight, 
-               ANSWER => $answer, 
-               COMMENT => $comment 
-             }
-            );
-    } # end of ($type eq '=')
-    return ('ANSWER', 
-            { TYPE => 'WRONG',
-              WEIGHT => $weight, 
-              ANSWER => $answer, 
-              COMMENT => $comment 
-            }
-           );
-  }
-  else { 
-    $parser->set_error("Expected a correct answer. ");
-    $parser->Error(); 
-  }
+         ); 
+  $parser->Error("Expected a correct answer. ");
 }
 
 sub Lex {
@@ -382,10 +417,9 @@ sub Lex {
 
     $lineno += &countlines($&) while ($input =~ s{\A//.*\n?}{}); # comments
 
-    if ($newquestion) {
-      return $parser->Lex_newquestion();
-    } # end if ($newquestion)
-    elsif ($input =~ s/\A{\s*//) { # Curly bracket "{": going to the "answer" section
+    return $parser->Lex_newquestion() if ($newquestion);
+
+    if ($input =~ s/\A{\s*//) { # Curly bracket "{": going to the "answer" section
       $lineno += &countlines($&);
       $inside_answers = 1;
       if ($input =~ s{\A#\s*}{}){
@@ -394,29 +428,29 @@ sub Lex {
       }
       return ('{', '{');
     }
-    elsif ($post_state and ($input =~ s/\A(.*?)((\n\s*\n)|\Z)/$2/s)) { 
+
+    if ($post_state and ($input =~ s/\A(.*?)((\n\s*\n)|\Z)/$2/s)) { 
       my $nl =  &countlines($2);
       $lineno += &countlines($&) - $nl;
       $post_state = 0;
       return ('POSTSTATE', $1 );
     }
-    elsif ($input =~ s/\A\n\s*\n(\S)/$1/) { # There must be at least one character 
-      $newquestion = 1;                     # after \n\n to have a new question
+
+    if ($input =~ s/\A\n\s*\n(\S)/$1/) { # There must be at least one character 
+      $newquestion = 1;                  # after \n\n to have a new question
       $lineno += &countlines($&);
       $lineno += &countlines($&) while ($input =~ s{\A//.*\n?}{} or $input =~ s{\A\s+}{}); 
       return 'QUESTIONSEP', 'QUESTIONSEP';
     }
-    elsif ($input =~ s/\A\s*\Z//) {
+
+    if ($input =~ s/\A\s*\Z//) {
       $lineno += &countlines($&);
       return ('',undef); # END OF INPUT
     }
-    elsif ($inside_answers) {
-      return $parser->Lex_inside_answers();
-    } # inside answers ...
-    else {
-      $parser->set_error("New question or new answer or end of input expected. ");
-      $parser->Error();
-    };
+
+    return $parser->Lex_inside_answers() if ($inside_answers);
+
+    $parser->Error("New question or new answer or end of input expected. ");
   } # while $input ...
 }
 
@@ -478,7 +512,7 @@ sub GiftFromFile {
   return $class->ParseGift();
 }
 
-package Question;
+package Gift::Question;
 
 sub is_a_MISSINGWORD {
  my $self = shift;
@@ -492,28 +526,28 @@ sub number_of_answers {
   scalar (@{$self->{ANSWERS}});
 }
 
-package TRUEFALSE;
-our @ISA = ('Question');
+package Gift::TRUEFALSE;
+our @ISA = ('Gift::Question');
 
 
-package MULTIPLECHOICE;
-our @ISA = ('Question');
+package Gift::MULTIPLECHOICE;
+our @ISA = ('Gift::Question');
 
 
-package SHORTANSWER;
-our @ISA = ('Question');
+package Gift::SHORTANSWER;
+our @ISA = ('Gift::Question');
 
 
-package MATCH;
-our @ISA = ('Question');
+package Gift::MATCH;
+our @ISA = ('Gift::Question');
 
 
-package NUMERIC;
-our @ISA = ('Question');
+package Gift::NUMERIC;
+our @ISA = ('Gift::Question');
 
 
-package MULTIPLEANSWER;
-our @ISA = ('Question');
+package Gift::MULTIPLEANSWER;
+our @ISA = ('Gift::Question');
 
 ######################################################3
 
@@ -552,7 +586,7 @@ the target format.
 
 The method C<GiftFromFile> receives as 
 its only parameter the name of a file containing a questionnaire
-written in Moodle gift format.  It returns a Gift object describing
+written in Moodle GIFT format.  It returns a Gift object describing
 the questionnaire. 
 
 The method C<GiftFromString> is similar but receives the input string
@@ -604,7 +638,7 @@ $ gift numeric1.gift
            },
         'POSTSTATE' => '',
         ]
-      }, 'NUMERIC' )
+      }, 'Gift::NUMERIC' )
    ], 'Gift' );
 
 
@@ -614,17 +648,17 @@ are supported:
 
 =over
 
-=item * C<TRUEFALSE> for True-false questions
+=item * C<Gift::TRUEFALSE> for True-false questions
 
-=item * C<MULTIPLECHOICE> for Multiple Choice questions
+=item * C<Gift::MULTIPLECHOICE> for Multiple Choice questions
 
-=item * C<SHORTANSWER> for Short Answer questions
+=item * C<Gift::SHORTANSWER> for Short Answer questions
 
-=item * C<MATCH> for Matching questions
+=item * C<Gift::MATCH> for Matching questions
 
-=item * C<NUMERIC> for the two types of numeric questions (range and threshold)
+=item * C<Gift::NUMERIC> for the two types of numeric questions (range and threshold)
 
-=item * C<MULTIPLEANSWER> for  multiple choice questions where two or more answers
+=item * C<Gift::MULTIPLEANSWER> for  multiple choice questions where two or more answers
                           must be selected in order to obtain full credit
 
 =back
@@ -661,10 +695,10 @@ of hashes describing the list of answers for this
 question. The fields in these answer hashes depend
 on the class of question and are described below.
 
-=head2 The C<Question> class
+=head2 The C<Gift::Question> class
 
-All the question classes inherit from the C<Question> class.
-The C<Question> class provides the method 
+All the question classes inherit from the C<Gift::Question> class.
+The C<Gift::Question> class provides the method 
 
           is_a_MISSINGWORD 
   
@@ -677,7 +711,7 @@ this _____) in the middle of the sentence. To use the Missing Word format,
 place the answer section before the end of the sentence.
 All question types can be written in the Missing Word format.
 
-The C<Question> class has also the method
+The C<Gift::Question> class has also the method
 
           number_of_answers
 
@@ -692,7 +726,7 @@ Follows an example of use:
     print $_->number_of_answers()."\n";
   }
 
-=head2 The MULTIPLECHOICE class
+=head2 The Gift::MULTIPLECHOICE class
 
 In the GIFT format, inside multiple choice questions, 
 wrong answers are prefixed with a tilde (~) and
@@ -717,14 +751,14 @@ The former question produces the object:
         'WEIGHT' => undef, 'ANSWER' => 'living' }
       ],
      'POSTSTATE' => ' in Grant\'s tomb.',
-   }, 'MULTIPLECHOICE' );
+   }, 'Gift::MULTIPLECHOICE' );
 
 The answer key C<TYPE> indicates what kind of answer is: right or wrong.
 Optionally an answer may have a C<WEIGHT> percentage saying the contribution
 of the answer to the total. The field C<COMMENT> holds the feedback 
 comment that will be displayed when the student chooses that answer.
 
-=head2 The SHORTANSWER Class
+=head2 The Gift::SHORTANSWER Class
 
 In the GIFT format, answers in Short Answer question-type are all prefixed by an equal sign (=),
 indicating that they are all correct answers. The answers must not contain a
@@ -754,7 +788,7 @@ the parser translates this question to:
                 'FORMAT' => undef,
                 'NAME' => undef
               }
-          }, 'SHORTANSWER' )
+          }, 'Gift::SHORTANSWER' )
 
 When there is only one correct Short Answer, the question may be written without the equal
 sign prefix:
@@ -776,10 +810,10 @@ produces:
                    }
                  ],
     'POSTSTATE' => '',
-  }, 'SHORTANSWER' )
+  }, 'Gift::SHORTANSWER' )
 
 
-=head2 The C<TRUEFALSE> Class
+=head2 The C<Gift::TRUEFALSE> Class
 
 In this question-type the answer indicates whether the statement is true or
 false. The answer should be written as C<{TRUE}> or C<{FALSE}>, or abbreviated to C<{T}>
@@ -802,13 +836,13 @@ is translated into:
        }
      ],
     'POSTSTATE' => '',
-  }, 'TRUEFALSE' )
+  }, 'Gift::TRUEFALSE' )
 
  The fields C<COMMENT_TRUE> and  C<COMMENT_FALSE> hold the feedback 
 comment that will be displayed by Moodle when the student chooses the
 corresponding answer.
 
-=head2 The NUMERIC Class
+=head2 The Gift::NUMERIC Class
 
 The answer section for Numerical questions must start with a number sign (C<#>).
 Numerical answers can include an error margin, which is written following the
@@ -818,7 +852,7 @@ to specify numerical multiple spans.
 If multiple answers are used, they must be separated by an equal
 sign.
 
-The C<NUMERIC> question:
+The C<Gift::NUMERIC> question:
 
      When was Ulysses S. Grant born? {#
          =1822:0
@@ -847,7 +881,7 @@ produces:
                     'NAME' => undef
                   },
     'POSTSTATE' => '',
-  }, 'NUMERIC' )
+  }, 'Gift::NUMERIC' )
 
 Optionally, numerical answers can be written as a span in the following format
 C<{#MinimumValue..MaximumValue}>.
@@ -875,9 +909,9 @@ C<{#MinimumValue..MaximumValue}>.
         'FORMAT' => undef,
         'NAME' => undef
       }
-  }, 'NUMERIC' )
+  }, 'Gift::NUMERIC' )
 
-=head2 The MATCH Class
+=head2 The Gift::MATCH Class
 
 Matching answers always begin with an equal sign (C<=>) and are separated by an arrow 
 C<-E<gt>>. There must be at least three matching pairs.
@@ -907,9 +941,9 @@ produces the object:
        { 'FIRST' => 'India', 'SECOND' => 'New Delhi', }
      ],
     'POSTSTATE' => '',
-  }, 'MATCH' )
+  }, 'Gift::MATCH' )
 
-=head2 The MULTIPLEANSWER Class
+=head2 The Gift::MULTIPLEANSWER Class
 
 The Multiple Answers option is used for multiple choice questions when two or
 more answers must be selected in order to obtain full credit. The multiple
@@ -959,7 +993,7 @@ the parser produces:
                    }
                  ],
     'POSTSTATE' => '',
-  }, 'MULTIPLEANSWER' )
+  }, 'Gift::MULTIPLEANSWER' )
 
 
 =head1 BUGS
@@ -972,7 +1006,7 @@ please let us know to the first author address
 E<lt>casiano@ull.esE<gt>
 
 There are a few limits in the way the version of Moodle 
-manages the gift format. 
+manages the GIFT format. 
 Some of them are due to the way some "gift metasymbols",
 (namely %, [, ] and  -> ) are not escaped
 (all the experiences refer to the "plain" format):
@@ -1007,7 +1041,7 @@ The module does not export any symbols
 
 =head1 SEE ALSO
 
-See the help in Moodle about the gift format. To get it, go to questionnaire, 
+See the help in Moodle about the GIFT format. To get it, go to questionnaire, 
 create one if needed, then click on the 
 help icon next to the import link. Paul Tsuchido Shew (http://ac.shew.jp)
 wrote the php Moodle GIFT filter and the documentation.
@@ -1017,12 +1051,12 @@ wrote the php Moodle GIFT filter and the documentation.
 This is a join work by
 Casiano Rodriguez Leon E<lt>casiano@ull.esE<gt>,
 Coromoto Leon Hernandez E<lt>cleon@ull.esE<gt>,
-and Luis Garcia Forte E<lt>lgforte@ull.esE<gt>,
+and Luis Garcia Forte E<lt>lgforte@ull.esE<gt>.
 
 =head1 COPYRIGHT AND LICENSE
 
 Copyright (C) 2005 by Casiano Rodriguez Leon, Coromoto Leon Hernandez
-and Luis Garcia Forte
+and Luis Garcia Forte. 
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.4 or,

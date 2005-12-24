@@ -1,58 +1,58 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'gramatica+acciones',
+                                          'PREFIX' => 'Una gramática independiente del contexto aumentada con acciones en la que el orden de  evaluación de las acciones se muestra de manera explícita es:'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => 'Incorrecto',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Incorrecto',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Una traducción dirigida por la sintáxis'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => 'Correcto',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Correcto',
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'Un esquema de traducción'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => 'Incorrecto',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Incorrecto',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Un programa yacc'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Una gramática independiente del contexto aumentada con acciones en la que el orden de  evaluación de las acciones se muestra de manera explícita es:',
-                                          'FORMAT' => 'plain',
-                                          'NAME' => 'gramatica+acciones'
-                                        }
-                        }, 'MULTIPLECHOICE' ),
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'pregunta con tildes en la respuesta',
+                                          'PREFIX' => '¿Que pasa si ponemos un tilde (\\~) en la respuesta?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'Pues que el tilde \\~ se escapará'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Pues que \\~ no se escapara'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Sea un \\= sea una \\~ se escapará'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => '¿Que pasa si ponemos un tilde (\\~) en la respuesta?',
-                                          'FORMAT' => 'plain',
-                                          'NAME' => 'pregunta con tildes en la respuesta'
-                                        }
-                        }, 'MULTIPLECHOICE' )
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' )
                ], 'Gift' );

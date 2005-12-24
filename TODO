@@ -1,4 +1,5 @@
-- Entregar en CPAN
+- Weights > 0 estan contándose bien?
+- Entregar de nuevo en CPAN (README was obsolete)
 - Ponerle opciones a gift (ejecutable). Convertirlo en un validador.
 - Hay una pérdida en el número de líneas en algún lado.
 * Escribir rutina que ejecuta gift sobre todos los .gift  produce los .ok

@@ -10,3 +10,7 @@ Revision history for Perl extension Gift.
 0.03 Sat dec 17 13:14:37 WET 2005
   - Many bugs fixed
 
+0.04 When delivered to CPAN package Question crashed
+     against existing one. Changed Question to Gift::Question
+     MATCH to Gift::MATCH, etc.
+

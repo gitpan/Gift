@@ -1,15 +1,9 @@
-Gift version 0.03
+Gift version 0.04
 =================
 
 INSTALLATION
 
-To install this module first install the
-Parse::Yapp module. 
-You can do it as administrator using the following command:
-
-perl -MCPAN -e install Parse::Yapp
-
-Next:
+To install this module just do:
 
    perl Makefile.PL
    make

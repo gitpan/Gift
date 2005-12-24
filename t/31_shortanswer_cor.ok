@@ -1,22 +1,22 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'no one'
                                          },
                                          {
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
                                            'ANSWER' => 'nobody'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'SHORTANSWER' )
+                                       ]
+                        }, 'Gift::SHORTANSWER' )
                ], 'Gift' );

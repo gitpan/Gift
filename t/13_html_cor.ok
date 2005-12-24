@@ -1,497 +1,497 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a6b5c4'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a4b4c5'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a2b3c6'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a3b4c3'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a6b7c5'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a4b4c2'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a5b9c7'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a6b7c1'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a2b8c0'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a3b9c4'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a3b5c3'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a4b4c2'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a6b2c2'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a3b9c5'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a6b5c8'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a5b2c2'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a3b7c8'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a5b2c1'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a6b0c5'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a2b5c1'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a2b6c1'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a3b4c3'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a5b4c4'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a5b2c0'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a3b2c5'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a3b4c7'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a2b2c7'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a5b4c4'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a4b9c9'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a5b1c0'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a5b6c6'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	0	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	6	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	4	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a3b7c9'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	9	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	7	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	5	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' ),
+                                       ]
+                        }, 'Gift::SHORTANSWER' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Arithmetics Puzzle - Subtraction',
+                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'a6b3c1'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Replace a, b and c with a single digit such that the subtraction is true: 	<br /> <table width\\="200" border\\="1"><tbody><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	3	<br /></td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><font size\\="4">	-	<br /></font></td><td width\\="50" valign\\="top" style\\="text-align: center;"> 	a	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	8	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	c	</td></tr><tr><td width\\="50" valign\\="top" style\\="text-align: center;"><br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	1	<br /></td><td width\\="50" valign\\="top" style\\="text-align: center;">	b	</td><td width\\="50" valign\\="top" style\\="text-align: center;">	2	<br /></td></tr></tbody></table>	Write your answer in the format a*b*c* where the *\'s are the answers respectively.<br />',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Arithmetics Puzzle - Subtraction'
-                                        }
-                        }, 'SHORTANSWER' )
+                                       ]
+                        }, 'Gift::SHORTANSWER' )
                ], 'Gift' );

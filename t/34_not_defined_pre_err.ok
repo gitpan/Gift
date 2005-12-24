@@ -1,8 +1,10 @@
 Error around lines 20 and 21!
 Curly bracket ('{') expected. 
+
+Last question processed:
+34_not_defined_pre_err
 Error is probably before or around:
 
-<P>
-
+34_not_defined_pre_err<P>
 
 

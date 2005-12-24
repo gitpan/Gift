@@ -10,7 +10,6 @@ lib/Makefile
 script/gift
 t/driver_correct.t
 t/driver_err_or_warn.t
-t/giftthemall
 t/01_2matches_err.gift
 t/01_2matches_err.ok
 t/02_truefalse2answers_err.gift

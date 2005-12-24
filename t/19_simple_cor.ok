@@ -1,32 +1,32 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'cristobalcolon',
+                                          'PREFIX' => 'Cristobal Colon descubrio America en el año 1492'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'COMMENT_FALSE' => undef,
-                                           'COMMENT_TRUE' => undef,
-                                           'ANSWER' => 'TRUE'
+                                           'ANSWER' => 'TRUE',
+                                           'COMMENT_TRUE' => undef
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Cristobal Colon descubrio America en el año 1492',
-                                          'FORMAT' => 'plain',
-                                          'NAME' => 'cristobalcolon'
-                                        }
-                        }, 'TRUEFALSE' ),
+                                       ]
+                        }, 'Gift::TRUEFALSE' ),
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => 'plain',
+                                          'NAME' => 'creacion de un modulo',
+                                          'PREFIX' => '¿Con que programa creo el esqueleto para un modulo?'
+                                        },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
+                                           'WEIGHT' => 100,
                                            'COMMENT' => '¡Muy bien!',
-                                           'WEIGHT' => '100',
                                            'ANSWER' => 'h2xs'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => '¿Con que programa creo el esqueleto para un modulo?',
-                                          'FORMAT' => 'plain',
-                                          'NAME' => 'creacion de un modulo'
-                                        }
-                        }, 'SHORTANSWER' )
+                                       ]
+                        }, 'Gift::SHORTANSWER' )
                ], 'Gift' );

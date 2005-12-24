@@ -1,40 +1,40 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => 'Jesus\' hometown',
+                                          'PREFIX' => 'Jesus Christ was from '
+                                        },
                           'POSTSTATE' => '.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'WRONG',
+                                           'WEIGHT' => undef,
                                            'COMMENT' => 'This was an important city, 
                but the wrong answer.',
-                                           'WEIGHT' => undef,
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Jerusalem'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
+                                           'WEIGHT' => 25,
                                            'COMMENT' => 'He was born here, 
                    but not raised here.',
-                                           'WEIGHT' => '25',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Bethlehem'
                                          },
                                          {
-                                           'TYPE' => 'WRONG',
+                                           'WEIGHT' => 50,
                                            'COMMENT' => 'You 
                  need to be 
                  more specific.',
-                                           'WEIGHT' => '50',
+                                           'TYPE' => 'WRONG',
                                            'ANSWER' => 'Galilee'
                                          },
                                          {
-                                           'TYPE' => 'RIGHT',
-                                           'COMMENT' => 'Yes! That\'s right!',
                                            'WEIGHT' => undef,
+                                           'COMMENT' => 'Yes! That\'s right!',
+                                           'TYPE' => 'RIGHT',
                                            'ANSWER' => 'Nazareth'
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'Jesus Christ was from ',
-                                          'FORMAT' => undef,
-                                          'NAME' => 'Jesus\' hometown'
-                                        }
-                        }, 'MULTIPLECHOICE' )
+                                       ]
+                        }, 'Gift::MULTIPLECHOICE' )
                ], 'Gift' );

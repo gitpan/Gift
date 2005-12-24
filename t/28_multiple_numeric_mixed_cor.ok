@@ -1,29 +1,29 @@
 $VAR1 = bless( [
                  bless( {
+                          'PRESTATE' => {
+                                          'FORMAT' => undef,
+                                          'NAME' => undef,
+                                          'PREFIX' => 'What is the value of pi (to 3 decimal places)? '
+                                        },
                           'POSTSTATE' => '.',
                           'ANSWERS' => [
                                          {
-                                           'TYPE' => 'NUMERIC',
-                                           'COMMENT' => undef,
                                            'WEIGHT' => undef,
+                                           'COMMENT' => undef,
+                                           'TYPE' => 'NUMERIC',
                                            'ANSWER' => [
                                                          '3.1415',
                                                          undef
                                                        ]
                                          },
                                          {
-                                           'TYPE' => 'NUMERICRANGE',
                                            'COMMENT' => undef,
+                                           'TYPE' => 'NUMERICRANGE',
                                            'ANSWER' => [
                                                          '3.141',
                                                          '3.142'
                                                        ]
                                          }
-                                       ],
-                          'PRESTATE' => {
-                                          'PREFIX' => 'What is the value of pi (to 3 decimal places)? ',
-                                          'FORMAT' => undef,
-                                          'NAME' => undef
-                                        }
-                        }, 'NUMERIC' )
+                                       ]
+                        }, 'Gift::NUMERIC' )
                ], 'Gift' );

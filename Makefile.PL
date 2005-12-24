@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     NAME              => 'Gift',
-    VERSION           => '0.3', # finds $VERSION
+    VERSION           => '0.4', # Not to crash with $Parse::Yapp::VERSION in the standalone driver
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     #PREREQ_PM         => {Parse::Yapp => 0}, # e.g., Module::Name => 1.1
     EXE_FILES         => [ 'script/gift' ],

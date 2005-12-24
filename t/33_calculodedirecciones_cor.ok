@@ -41,7 +41,7 @@ DB&lt;7&gt; x pos($data) <br>
                                            'ANSWER' => '5'
                                          }
                                        ]
-                        }, 'MULTIPLECHOICE' ),
+                        }, 'Gift::MULTIPLECHOICE' ),
                  bless( {
                           'PRESTATE' => {
                                           'FORMAT' => undef,
@@ -77,5 +77,5 @@ direcciones finales de las cadenas constantes:
                                            'ANSWER' => 'STRING'
                                          }
                                        ]
-                        }, 'SHORTANSWER' )
+                        }, 'Gift::SHORTANSWER' )
                ], 'Gift' );
