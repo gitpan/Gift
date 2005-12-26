@@ -12,8 +12,13 @@ To install this module just do:
 
 DEPENDENCIES
 
-This module requires Parse::Yapp
+No dependencies.
+This module uses a standalone parser that was built using Parse::Yapp.
+It does not require Parse::Yapp to work. 
 
+ACKNOWLEDGMENTS
+Thanks to Universidad de La Laguna,
+and National TIC project TIC2002-04498-C05-05 (TRACER).
 
 COPYRIGHT AND LICENCE
 Copyright (C) 2005 by

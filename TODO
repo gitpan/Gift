@@ -1,6 +1,7 @@
+- Pasarle cover
+- numbers in numeric questions: exponents, etc.
 - Weights > 0 estan contándose bien?
 - Entregar de nuevo en CPAN (README was obsolete)
-- Ponerle opciones a gift (ejecutable). Convertirlo en un validador.
 - Hay una pérdida en el número de líneas en algún lado.
 * Escribir rutina que ejecuta gift sobre todos los .gift  produce los .ok
 * El código de Lex_inside_answers necesita mejorar en claridad

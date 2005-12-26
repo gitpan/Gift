@@ -3,8 +3,6 @@
 #
 #Note for the Authors: Look at: /home/webs/pcgull/moodle/datos/12/cuestionario in zion
 
-our $VERSION = '0.4';
-
 # The standalone parser in this module was built using the Parse::Yapp 
 # distribution (available from CPAN). The author of Parse::Yapp is Francois Desarmenien.
 
@@ -40,7 +38,7 @@ sub set_error {
   $parser->YYData->{ERRMSG} = $message;
 }
 
-sub build_problem { 
+sub build_question { 
   my $parser = shift;
   my ($prestate, $answers, $posstate) = @_;
   my @answers = @$answers;
@@ -98,7 +96,7 @@ question:            { undef }
           '{'                     
           answers 
           '}' 
-          poststate  { $_[0]->build_problem($_[1], $_[3], $_[5]); }
+          poststate  { $_[0]->build_question($_[1], $_[3], $_[5]); }
         ;
 
 answers: answers ANSWER { 
@@ -189,26 +187,29 @@ sub Lex_newquestion {
 }
 
 sub parse_end_of_answer {
-  my $parser = shift;
+  my ($parser, $match) = @_;
 
-  $lineno += &countlines($&);
-  if ($inside_match and ($answerno <= 2)) {
-    $parser->Error("A match question must have at least three pairs");
-  }
-  if ($weightsum > 100) {
-    $parser->Error("Sum of weights is ${weightsum}% > 100%.");
-  }
-  if ($inside_truefalse and ($answerno > 1)) {
-    $parser->Error("A TRUE-FALSE question can have only one answer.");
-  }
+  $lineno += &countlines($match);
+  $parser->Error("A match question must have at least three pairs") 
+                            if ($inside_match and ($answerno <= 2));
+
+  $parser->Error("Sum of weights is ${weightsum}% > 100%.") 
+                                      if ($weightsum > 100);
+
+  $parser->Error("A TRUE-FALSE question can have only one answer.") 
+                         if ($inside_truefalse and ($answerno > 1));
+
   if (!$inside_numeric and !$inside_match) {
     $is_shortanswer = ($answerno == $numright);
     $is_multipleanswer = (($numright == 0) and $num_positive_weights);
     
   }
-  $inside_answers = $inside_match = $inside_numeric = $answerno = 
-  $numright = $weightsum = $num_positive_weights = $inside_truefalse = 0;
+
+  $inside_answers       = $inside_match     = $inside_numeric = 
+  $answerno             = $numright         = $weightsum      = 
+  $num_positive_weights = $inside_truefalse = 0;
   $post_state = 1;
+
   return ('}', '}');
 }
 
@@ -223,13 +224,13 @@ sub parse_numeric {
 
   if ($input =~ s/\A          # range type {#3.141..3.142}
                   =?
-                  (%\s*(-?\d+)\s*%)?
-                  (\d+(\.\d+)?)
-                  \.\.
-                  (\d+(\.\d+)?)
+                  (%\s*(-?\d+)\s*%)? # weight
+                  (\d+(\.\d+)?)(e[-+]?\d+)?
+                  \s*\.\.\s*
+                  (\d+(\.\d+)?)(e[-+]?\d+)?
                   (\s*\#((\\.|[^=~}])*))?
-                  //x) {  # range
-    my ($weight, $firstnumber, $secondnumber, $comment) = ($2, $3, $5, $8); 
+                  //xi) {  # range
+    my ($weight, $firstnumber, $secondnumber, $comment) = ($2, $3, $6, $10); 
     $lineno += &countlines($&);
     $weightsum += $weight if defined($weight);
     &trim_end($comment); # trim final spaces in comment
@@ -240,14 +241,17 @@ sub parse_numeric {
             }
            );
   }
-  elsif ($input =~ s/\A
+
+  if ($input =~ s/\A
                      =?
                      (%\s*(-?\d+)\s*%)?
-                     (\d+(\.\d+)?)
-                     (:(\d+(\.\d+)?))?
+                     (\d+(\.\d+)?)(e[-+]?\d+)?
+                     (:
+                       (\d+(\.\d+)?)(e[-+]?\d+)? # error threshold
+                     )? 
                      (\s*\#((\\.|[^=~}])*))?
-                     //x) { 
-    my ($weight, $number, $error, $comment) = ($2, $3, $6, $9);  
+                     //xi) { 
+    my ($weight, $number, $error, $comment) = ($2, $3, $7, $11);  
     $lineno += &countlines($&);
     $weightsum += $weight if defined($weight);
     &trim_end($comment);
@@ -259,16 +263,16 @@ sub parse_numeric {
             }
            );
   }
-  else {
-    $parser->Error("Expecting a numeric answer or }");
-  }
+
+  $parser->Error("Expecting a numeric answer or }");
+
 }
 
 sub parse_truefalse {
   my $parser = shift;
+  my ($match, $token, $commenttrue, $commentfalse) = @_;
 
-  $lineno += &countlines($&);
-  my ($token, $commenttrue, $commentfalse) = ($1, $5, $7);
+  $lineno += &countlines($match);
   &trim_end($commenttrue, $commentfalse);
   $answerno++;
   $inside_truefalse = 1;
@@ -290,44 +294,47 @@ sub parse_truefalse {
 
 sub parse_single_short_answer {
   my $parser = shift;
+  my ($match, $weight, $answer, $comment) = @_ ; # ($2, $3, $6);
 
-    # Single Answer: Short answer
-    # ... If there is only one correct Short Answer, it may be written without
-    # the equal sign prefix, as long as it cannot be confused as True-False.
-    my ($weight, $answer, $comment) = ($2, $3, $6);
-    $lineno += &countlines($&);
-    if (defined($weight)) {
-      $weightsum += $weight;
-      $num_positive_weights++ if $weight > 0;
-    }
-    &trim_end($answer, $comment);
-    $answerno++;
-    $numright++;
-    return ('ANSWER', 
-            { TYPE => 'RIGHT',
-              WEIGHT => $weight, 
-              ANSWER => $answer, 
-              COMMENT => $comment 
-            }
-           );
+  # Single Answer: Short answer
+  # ... If there is only one correct Short Answer, it may be written without
+  # the equal sign prefix, as long as it cannot be confused as True-False.
+  $lineno += &countlines($match);
+  if (defined($weight)) {
+    $weightsum += $weight;
+    $num_positive_weights++ if $weight > 0;
+  }
+  &trim_end($answer, $comment);
+  $answerno++;
+  $numright++;
+  return ('ANSWER', 
+          { TYPE => 'RIGHT',
+            WEIGHT => $weight, 
+            ANSWER => $answer, 
+            COMMENT => $comment 
+          }
+         );
 }
 
 sub parse_match {
   my $parser = shift;
   my ($weight, $comment) = @_;
 
-   if ((!$inside_match) and ($answerno > 1)) {
-     $parser->Error(
-      "Inside a Matching question all the answers have to match the format:\na -> b\nAn answer previous to ${answerno}th answer does not have an arrow."
-     );
-   }
-   $inside_match = 1; 
-   # Warn if weights 
-   $parser->Warning(
-     'Warning', 
-     "Matching questions do not support feedback or percentage answer weights."
-   ) if (defined($weight) or defined($comment));
-   return ('ANSWER', { FIRST => $1, SECOND => $2, });
+  ((!$inside_match) and ($answerno > 1)) and
+    $parser->Error(
+     "Inside a Matching question all the answers have to match the format:\n".
+     "a -> b\n".
+     "An answer previous to ${answerno}th answer does not have an arrow."
+    ); 
+
+  $inside_match = 1; 
+  # Warn if weights 
+  $parser->Warning(
+    'Warning', 
+    "Matching questions do not support feedback or percentage answer weights."
+  ) if (defined($weight) or defined($comment));
+
+  return ('ANSWER', { FIRST => $1, SECOND => $2, });
 }
 
 sub update_weights {
@@ -339,12 +346,13 @@ sub update_weights {
 
 sub parse_right_or_wrong {
   my $parser = shift;
-  my ($type, $weight, $answer, $comment) = @_;
+  my ($match, $type, $weight, $answer, $comment) = @_;
 
-  $lineno += &countlines($&);
+  $lineno += &countlines($match);
   &update_weights($weight) if (defined($weight));
   &trim_end($answer, $comment);
   $answerno++;
+
   $parser->Error("Illformed matching question. Expected ~ or ->.") 
     if ($inside_match and (($type eq '~') or ($answer !~ m{(.+?)\s*->\s*(.+)})));
 
@@ -377,11 +385,11 @@ sub Lex_inside_answers {
 
   &skip_whites();
 
-  return $parser->parse_end_of_answer() if ($input =~ s/\A\s*}//);  # CLOSING }
+  return $parser->parse_end_of_answer($&) if ($input =~ s/\A\s*}//);  # CLOSING }
 
   return $parser->parse_numeric() if ($inside_numeric);
   
-  return $parser->parse_truefalse() if 
+  return $parser->parse_truefalse($&, $1, $5, $7) if 
                   ($input =~ s{\A(
                        (TR?U?E?)|(FA?L?S?E?)) # answer
                        (\#([^\}]*))?          # comment for the first answer
@@ -389,7 +397,7 @@ sub Lex_inside_answers {
                        (\#([^\}]*))?}         # comment for the second answer
                   {}ix);
 
-  return $parser->parse_single_short_answer() if 
+  return $parser->parse_single_short_answer($&, $2, $3, $6) if 
        ($input =~ s/\A\s*       # single short answer
                       (%\s*(-?\d+)\s*%)?   # weight
                       ((\\.|[^~=\}\#])+)   # the answer
@@ -398,7 +406,7 @@ sub Lex_inside_answers {
                   /}/x                     # give back the }
        );
 
-  return $parser->parse_right_or_wrong($1, $3, $4, $7) if 
+  return $parser->parse_right_or_wrong($&, $1, $3, $4, $7) if 
          ($input =~ s/\A\s*
                       ([~=])               # right or wrong answer
                       (%\s*(-?\d+)\s*%)?   # weight
@@ -415,7 +423,7 @@ sub Lex {
 
   while ($input) {
 
-    $lineno += &countlines($&) while ($input =~ s{\A//.*\n?}{}); # comments
+    $lineno += &countlines($&) while ($input =~ s{\A//.*\n}{}); # skip comments
 
     return $parser->Lex_newquestion() if ($newquestion);
 
@@ -430,8 +438,7 @@ sub Lex {
     }
 
     if ($post_state and ($input =~ s/\A(.*?)((\n\s*\n)|\Z)/$2/s)) { 
-      my $nl =  &countlines($2);
-      $lineno += &countlines($&) - $nl;
+      $lineno += &countlines($1);
       $post_state = 0;
       return ('POSTSTATE', $1 );
     }
@@ -439,7 +446,7 @@ sub Lex {
     if ($input =~ s/\A\n\s*\n(\S)/$1/) { # There must be at least one character 
       $newquestion = 1;                  # after \n\n to have a new question
       $lineno += &countlines($&);
-      $lineno += &countlines($&) while ($input =~ s{\A//.*\n?}{} or $input =~ s{\A\s+}{}); 
+      $lineno += &countlines($&) while ($input =~ s{\A//.*\n}{} or $input =~ s{\A\s+}{}); 
       return 'QUESTIONSEP', 'QUESTIONSEP';
     }
 
@@ -477,7 +484,7 @@ sub ParseGift {
 
   my $parser = new Gift();
   # initial blanks and comments
-  while (($input =~ s{\A\s+}{}) or ($input =~ s{\A//.*\n?}{})) {
+  while (($input =~ s{\A\s+}{}) or ($input =~ s{\A//.*\n}{})) {
     $lineno += &countlines($&) 
   }
   my $result = $parser->YYParse(yylex => \&Lex, yyerror => \&Error, yydebug => 0x0);
@@ -526,6 +533,48 @@ sub number_of_answers {
   scalar (@{$self->{ANSWERS}});
 }
 
+sub PRESTATE {
+  my $self = shift;
+
+  $self->{PRESTATE} = $_[0] if defined($_[0]);
+  return $self->{PRESTATE}
+}
+
+sub PREFIX {
+  my $self = shift;
+
+  $self->PRESTATE->{PREFIX} = $_[0] if defined($_[0]);
+  return $self->{PREFIX};
+}
+
+sub FORMAT {
+  my $self = shift;
+
+  $self->PRESTATE->{FORMAT} = $_[0] if defined($_[0]);
+  return $self->{FORMAT};
+}
+
+sub NAME {
+  my $self = shift;
+
+  $self->PRESTATE->{NAME} = $_[0] if defined($_[0]);
+  return $self->{NAME};
+}
+
+sub ANSWERS {
+  my $self = shift;
+
+  $self->{ANSWERS} = $_[0] if defined($_[0]);
+  return $self->{ANSWERS}
+}
+
+sub POSTSTATE {
+  my $self = shift;
+
+  $self->{POSTSTATE} = $_[0] if defined($_[0]);
+  return $self->{POSTSTATE}
+}
+
 package Gift::TRUEFALSE;
 our @ISA = ('Gift::Question');
 
@@ -549,7 +598,7 @@ our @ISA = ('Gift::Question');
 package Gift::MULTIPLEANSWER;
 our @ISA = ('Gift::Question');
 
-######################################################3
+######################################################
 
 =head1 NAME
 
@@ -648,18 +697,18 @@ are supported:
 
 =over
 
-=item * C<Gift::TRUEFALSE> for True-false questions
-
-=item * C<Gift::MULTIPLECHOICE> for Multiple Choice questions
-
-=item * C<Gift::SHORTANSWER> for Short Answer questions
-
 =item * C<Gift::MATCH> for Matching questions
-
-=item * C<Gift::NUMERIC> for the two types of numeric questions (range and threshold)
 
 =item * C<Gift::MULTIPLEANSWER> for  multiple choice questions where two or more answers
                           must be selected in order to obtain full credit
+
+=item * C<Gift::MULTIPLECHOICE> for Multiple Choice questions
+
+=item * C<Gift::NUMERIC> for the two types of numeric questions (range and threshold)
+
+=item * C<Gift::SHORTANSWER> for Short Answer questions
+
+=item * C<Gift::TRUEFALSE> for True-false questions
 
 =back
 
@@ -698,11 +747,13 @@ on the class of question and are described below.
 =head2 The C<Gift::Question> class
 
 All the question classes inherit from the C<Gift::Question> class.
-The C<Gift::Question> class provides the method 
+The C<Gift::Question> class provides the methods
 
-          is_a_MISSINGWORD 
-  
-which returns TRUE
+=over
+
+=item C<is_a_MISSINGWORD> 
+
+Which returns TRUE
 if the question matches the Missing Word format, i.e.
 has a non empty postfix.
 
@@ -710,6 +761,9 @@ When displaying a Missing Word, the Moodle quiz engine inserts a fill-in-the-bla
 this _____) in the middle of the sentence. To use the Missing Word format,
 place the answer section before the end of the sentence.
 All question types can be written in the Missing Word format.
+
+
+=item C<number_of_answers>
 
 The C<Gift::Question> class has also the method
 
@@ -726,190 +780,39 @@ Follows an example of use:
     print $_->number_of_answers()."\n";
   }
 
-=head2 The Gift::MULTIPLECHOICE class
+=item The following accesor/mutators (getter-setters) for the 
+C<Gift::Question> object:
 
-In the GIFT format, inside multiple choice questions, 
-wrong answers are prefixed with a tilde (~) and
-the correct answer is prefixed with an equal sign (=).
+=over
 
-     Grant is {~buried =entombed ~living} in Grant's tomb.
+=item C<PRESTATE> 
 
-This is also an example of Missing Word format question 
-since there is text after the answers.
+A reference to a hash with keys C<PREFIX>, C<FORMAT> and C<NAME>
 
-The former question produces the object:
+=item C<PREFIX>
 
-  $x = bless( { 
-     'PRESTATE' => { 'PREFIX' => 'Grant is ', '
-        FORMAT' => undef, 'NAME' => undef },
-     'ANSWERS' => [
-      { 'TYPE' => 'WRONG', 'COMMENT' => undef, 
-        'WEIGHT' => undef, 'ANSWER' => 'buried' },
-      { 'TYPE' => 'RIGHT', 'COMMENT' => undef,
-        'WEIGHT' => undef, 'ANSWER' => 'entombed' },
-      { 'TYPE' => 'WRONG', 'COMMENT' => undef, 
-        'WEIGHT' => undef, 'ANSWER' => 'living' }
-      ],
-     'POSTSTATE' => ' in Grant\'s tomb.',
-   }, 'Gift::MULTIPLECHOICE' );
+A string. The text of the question before the answer section.
 
-The answer key C<TYPE> indicates what kind of answer is: right or wrong.
-Optionally an answer may have a C<WEIGHT> percentage saying the contribution
-of the answer to the total. The field C<COMMENT> holds the feedback 
-comment that will be displayed when the student chooses that answer.
+=item C<FORMAT> 
 
-=head2 The Gift::SHORTANSWER Class
+A string. Set/Returns the format used for the question prefix: html, plain, etc.
 
-In the GIFT format, answers in Short Answer question-type are all prefixed by an equal sign (=),
-indicating that they are all correct answers. The answers must not contain a
-tilde. The short answer question:
+=item C<NAME>
 
-  Who's buried in Grant's tomb?{=no one =nobody}
+A string. The name of the question.
 
-the parser translates this question to:
+=item C<ANSWERS>
 
-   bless( {
-            'POSTSTATE' => '',
-            'ANSWERS' => [
-                           {
-                             'COMMENT' => undef,
-                             'WEIGHT' => undef,
-                             'ANSWER' => 'no one'
-                           },
-                           {
-                             'COMMENT' => undef,
-                             'WEIGHT' => undef,
-                             'ANSWER' => 'nobody'
-                           }
-                         ],
-            'PRESTATE' => 
-              {
-                'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
-                'FORMAT' => undef,
-                'NAME' => undef
-              }
-          }, 'Gift::SHORTANSWER' )
+A reference to the array of answers. Each element is a reference to a hash
+describing the answer.
 
-When there is only one correct Short Answer, the question may be written without the equal
-sign prefix:
+=item C<POSTSTATE>
 
-  What is the charge on a CH<sub>3</sub>COO ion.{1-#correct}
+A string. The text of the question after the answer section.
 
-produces:
+=back
 
-  bless( {
-    'PRESTATE' => {
-      'PREFIX' => 'What is the charge on a CH<sub>3</sub>COO ion.',
-      'FORMAT' => undef,
-      'NAME' => undef
-    },
-    'ANSWERS' => [ {
-                     'COMMENT' => 'correcto',
-                     'WEIGHT' => undef,
-                     'ANSWER' => '1-'
-                   }
-                 ],
-    'POSTSTATE' => '',
-  }, 'Gift::SHORTANSWER' )
-
-
-=head2 The C<Gift::TRUEFALSE> Class
-
-In this question-type the answer indicates whether the statement is true or
-false. The answer should be written as C<{TRUE}> or C<{FALSE}>, or abbreviated to C<{T}>
-or C<{F}>. The following True-False question:
-
-  The sun rises in the east.{T}
-
-is translated into:
-
-  bless( {
-    'PRESTATE' => {
-      'PREFIX' => 'The sun rises in the east.',
-      'FORMAT' => undef, 'NAME' => undef
-    },
-    'ANSWERS' => [
-       {
-         'COMMENT_FALSE' => undef,
-         'COMMENT_TRUE' => undef,
-         'ANSWER' => 'TRUE'
-       }
-     ],
-    'POSTSTATE' => '',
-  }, 'Gift::TRUEFALSE' )
-
- The fields C<COMMENT_TRUE> and  C<COMMENT_FALSE> hold the feedback 
-comment that will be displayed by Moodle when the student chooses the
-corresponding answer.
-
-=head2 The Gift::NUMERIC Class
-
-The answer section for Numerical questions must start with a number sign (C<#>).
-Numerical answers can include an error margin, which is written following the
-correct answer, separated by a colon. 
-Multiple Numerical Answers can be combined
-to specify numerical multiple spans.
-If multiple answers are used, they must be separated by an equal
-sign.
-
-The C<Gift::NUMERIC> question:
-
-     When was Ulysses S. Grant born? {#
-         =1822:0
-         =%50%1822:2}
-
-produces:
-
-  bless( {
-    'ANSWERS' => [
-                   {
-                     'TYPE' => 'NUMERIC',
-                     'COMMENT' => undef,
-                     'WEIGHT' => undef,
-                     'ANSWER' => [ '1822', '0' ]
-                   },
-                   {
-                     'TYPE' => 'NUMERIC',
-                     'COMMENT' => undef,
-                     'WEIGHT' => '50',
-                     'ANSWER' => [ '1822', '2' ]
-                   }
-                 ],
-    'PRESTATE' => {
-                    'PREFIX' => 'When was Ulysses S. Grant born? ',
-                    'FORMAT' => undef,
-                    'NAME' => undef
-                  },
-    'POSTSTATE' => '',
-  }, 'Gift::NUMERIC' )
-
-Optionally, numerical answers can be written as a span in the following format
-C<{#MinimumValue..MaximumValue}>.
-
-  What is the value of pi (to 3 decimal places)? {#
-   =3.1415 =%50%3.141..3.142}
-
-  bless( {
-    'POSTSTATE' => '.',
-    'ANSWERS' => [
-       {
-         'TYPE' => 'NUMERIC',
-         'COMMENT' => undef,
-         'WEIGHT' => undef,
-         'ANSWER' => [ '3.1415', undef ]
-       },
-       {
-         'TYPE' => 'NUMERICRANGE',
-         'COMMENT' => undef,
-         'ANSWER' => [ '3.141', '3.142' ]
-       }
-     ],
-    'PRESTATE' => {
-        'PREFIX' => 'What is the value of pi (to 3 decimal places)? ',
-        'FORMAT' => undef,
-        'NAME' => undef
-      }
-  }, 'Gift::NUMERIC' )
+=back
 
 =head2 The Gift::MATCH Class
 
@@ -996,6 +899,192 @@ the parser produces:
   }, 'Gift::MULTIPLEANSWER' )
 
 
+=head2 The Gift::MULTIPLECHOICE Class
+
+In the GIFT format, inside multiple choice questions, 
+wrong answers are prefixed with a tilde (~) and
+the correct answer is prefixed with an equal sign (=).
+
+     Grant is {~buried =entombed ~living} in Grant's tomb.
+
+This is also an example of Missing Word format question 
+since there is text after the answers.
+
+The former question produces the object:
+
+  $x = bless( { 
+     'PRESTATE' => { 'PREFIX' => 'Grant is ', '
+        FORMAT' => undef, 'NAME' => undef },
+     'ANSWERS' => [
+      { 'TYPE' => 'WRONG', 'COMMENT' => undef, 
+        'WEIGHT' => undef, 'ANSWER' => 'buried' },
+      { 'TYPE' => 'RIGHT', 'COMMENT' => undef,
+        'WEIGHT' => undef, 'ANSWER' => 'entombed' },
+      { 'TYPE' => 'WRONG', 'COMMENT' => undef, 
+        'WEIGHT' => undef, 'ANSWER' => 'living' }
+      ],
+     'POSTSTATE' => ' in Grant\'s tomb.',
+   }, 'Gift::MULTIPLECHOICE' );
+
+The answer key C<TYPE> indicates what kind of answer is: right or wrong.
+Optionally an answer may have a C<WEIGHT> percentage saying the contribution
+of the answer to the total. The field C<COMMENT> holds the feedback 
+comment that will be displayed when the student chooses that answer.
+
+=head2 The Gift::NUMERIC Class
+
+The answer section for Numerical questions must start with a number sign (C<#>).
+Numerical answers can include an error margin, which is written following the
+correct answer, separated by a colon. 
+Multiple Numerical Answers can be combined
+to specify numerical multiple spans.
+If multiple answers are used, they must be separated by an equal
+sign.
+
+The C<Gift::NUMERIC> question:
+
+     When was Ulysses S. Grant born? {#
+         =1822:0
+         =%50%1822:2}
+
+produces:
+
+  bless( {
+    'ANSWERS' => [
+                   {
+                     'TYPE' => 'NUMERIC',
+                     'COMMENT' => undef,
+                     'WEIGHT' => undef,
+                     'ANSWER' => [ '1822', '0' ]
+                   },
+                   {
+                     'TYPE' => 'NUMERIC',
+                     'COMMENT' => undef,
+                     'WEIGHT' => '50',
+                     'ANSWER' => [ '1822', '2' ]
+                   }
+                 ],
+    'PRESTATE' => {
+                    'PREFIX' => 'When was Ulysses S. Grant born? ',
+                    'FORMAT' => undef,
+                    'NAME' => undef
+                  },
+    'POSTSTATE' => '',
+  }, 'Gift::NUMERIC' )
+
+Optionally, numerical answers can be written as a span in the following format
+C<{#MinimumValue..MaximumValue}>.
+
+  What is the value of pi (to 3 decimal places)? {#
+   =3.1415 =%50%3.141..3.142}
+
+  bless( {
+    'POSTSTATE' => '.',
+    'ANSWERS' => [
+       {
+         'TYPE' => 'NUMERIC',
+         'COMMENT' => undef,
+         'WEIGHT' => undef,
+         'ANSWER' => [ '3.1415', undef ]
+       },
+       {
+         'TYPE' => 'NUMERICRANGE',
+         'COMMENT' => undef,
+         'ANSWER' => [ '3.141', '3.142' ]
+       }
+     ],
+    'PRESTATE' => {
+        'PREFIX' => 'What is the value of pi (to 3 decimal places)? ',
+        'FORMAT' => undef,
+        'NAME' => undef
+      }
+  }, 'Gift::NUMERIC' )
+
+=head2 The Gift::SHORTANSWER Class
+
+In the GIFT format, answers in Short Answer question-type are all prefixed by an equal sign (=),
+indicating that they are all correct answers. The answers must not contain a
+tilde. The short answer question:
+
+  Who's buried in Grant's tomb?{=no one =nobody}
+
+the parser translates this question to:
+
+   bless( {
+            'POSTSTATE' => '',
+            'ANSWERS' => [
+                           {
+                             'COMMENT' => undef,
+                             'WEIGHT' => undef,
+                             'ANSWER' => 'no one'
+                           },
+                           {
+                             'COMMENT' => undef,
+                             'WEIGHT' => undef,
+                             'ANSWER' => 'nobody'
+                           }
+                         ],
+            'PRESTATE' => 
+              {
+                'PREFIX' => 'Who\'s buried in Grant\'s tomb?',
+                'FORMAT' => undef,
+                'NAME' => undef
+              }
+          }, 'Gift::SHORTANSWER' )
+
+When there is only one correct Short Answer, the question may be written without the equal
+sign prefix:
+
+  What is the charge on a CH<sub>3</sub>COO ion.{1-#correct}
+
+produces:
+
+  bless( {
+    'PRESTATE' => {
+      'PREFIX' => 'What is the charge on a CH<sub>3</sub>COO ion.',
+      'FORMAT' => undef,
+      'NAME' => undef
+    },
+    'ANSWERS' => [ {
+                     'COMMENT' => 'correcto',
+                     'WEIGHT' => undef,
+                     'ANSWER' => '1-'
+                   }
+                 ],
+    'POSTSTATE' => '',
+  }, 'Gift::SHORTANSWER' )
+
+
+=head2 The C<Gift::TRUEFALSE> Class
+
+In this question-type the answer indicates whether the statement is true or
+false. The answer should be written as C<{TRUE}> or C<{FALSE}>, or abbreviated to C<{T}>
+or C<{F}>. The following True-False question:
+
+  The sun rises in the east.{T}
+
+is translated into:
+
+  bless( {
+    'PRESTATE' => {
+      'PREFIX' => 'The sun rises in the east.',
+      'FORMAT' => undef, 'NAME' => undef
+    },
+    'ANSWERS' => [
+       {
+         'COMMENT_FALSE' => undef,
+         'COMMENT_TRUE' => undef,
+         'ANSWER' => 'TRUE'
+       }
+     ],
+    'POSTSTATE' => '',
+  }, 'Gift::TRUEFALSE' )
+
+ The fields C<COMMENT_TRUE> and  C<COMMENT_FALSE> hold the feedback 
+comment that will be displayed by Moodle when the student chooses the
+corresponding answer.
+
+
 =head1 BUGS
 
 We haven't found a formal definition of the GIFT language
@@ -1046,12 +1135,18 @@ create one if needed, then click on the
 help icon next to the import link. Paul Tsuchido Shew (http://ac.shew.jp)
 wrote the php Moodle GIFT filter and the documentation.
 
+=head1 ACKNOWLEDGEMENTS
+
+Thanks to Universidad de La Laguna,
+and National TIC project TIC2002-04498-C05-05 (TRACER).
+
 =head1 AUTHOR
 
 This is a join work by
 Casiano Rodriguez Leon E<lt>casiano@ull.esE<gt>,
 Coromoto Leon Hernandez E<lt>cleon@ull.esE<gt>,
 and Luis Garcia Forte E<lt>lgforte@ull.esE<gt>.
+Universidad de La Laguna.
 
 =head1 COPYRIGHT AND LICENSE
 

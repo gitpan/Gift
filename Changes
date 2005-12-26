@@ -13,4 +13,4 @@ Revision history for Perl extension Gift.
 0.04 When delivered to CPAN package Question crashed
      against existing one. Changed Question to Gift::Question
      MATCH to Gift::MATCH, etc.
-
+0.05 More modular. Gettter-Setters for Questions.
