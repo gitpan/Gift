@@ -22,7 +22,7 @@ to save and recover quiz questions to and from text files.
 
 This script parses a file in GIFT format. If correct, it dumps
 a reference to an object describing the questions
-otehrwise it reports about the errors.
+otherwise it reports about the errors.
 
 =head1 SEE ALSO
 

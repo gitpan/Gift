@@ -10,28 +10,6 @@ lib/Makefile
 script/gift
 t/driver_correct.t
 t/driver_err_or_warn.t
-t/01_2matches_err.gift
-t/01_2matches_err.ok
-t/02_truefalse2answers_err.gift
-t/02_truefalse2answers_err.ok
-t/03_truefalse2answers_err.gift
-t/03_truefalse2answers_err.ok
-t/04_noanswers_err.gift
-t/04_noanswers_err.ok
-t/05_weights_err.gift
-t/05_weights_err.ok
-t/06_missingarrow_err.gift
-t/06_missingarrow_err.ok
-t/07_missingarrow_html_err.gift
-t/07_missingarrow_html_err.ok
-t/08_matchwithtilde_err.gift
-t/08_matchwithtilde_err.ok
-t/09_numeric_err.gift
-t/09_numeric_err.ok
-t/10_linenumber_err.gift
-t/10_linenumber_err.ok
-t/11_num_warns_warn.gift
-t/11_num_warns_warn.ok
 t/12_example_cor.gift
 t/12_example_cor.ok
 t/13_html_cor.gift
@@ -42,8 +20,6 @@ t/15_shortanswers_cor.gift
 t/15_shortanswers_cor.ok
 t/16_1shortanswer_cor.gift
 t/16_1shortanswer_cor.ok
-t/17_1shortanswer_err.gift
-t/17_1shortanswer_err.ok
 t/18_brackets_inside_the_statement_cor.gift
 t/18_brackets_inside_the_statement_cor.ok
 t/19_simple_cor.gift
@@ -76,6 +52,4 @@ t/32_multipleanswer_cor.gift
 t/32_multipleanswer_cor.ok
 t/33_calculodedirecciones_cor.gift
 t/33_calculodedirecciones_cor.ok
-t/34_not_defined_pre_err.gift
-t/34_not_defined_pre_err.ok
 META.yml                                 Module meta-data (added by MakeMaker)

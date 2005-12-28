@@ -1154,20 +1154,20 @@ sub PREFIX {
   my $self = shift;
 
   $self->PRESTATE->{PREFIX} = $_[0] if defined($_[0]);
-  return $self->{PREFIX};
+  return $self->PRESTATE->{PREFIX};
 }
 
 sub FORMAT {
   my $self = shift;
 
   $self->PRESTATE->{FORMAT} = $_[0] if defined($_[0]);
-  return $self->{FORMAT};
+  return $self->PRESTATE->{FORMAT};
 }
 
 sub NAME {
   my $self = shift;
 
-  $self->PRESTATE->{NAME} = $_[0] if defined($_[0]);
+  $self->PRESTATE->PRESTATE->{NAME} = $_[0] if defined($_[0]);
   return $self->{NAME};
 }
 
@@ -1188,6 +1188,11 @@ sub POSTSTATE {
 package Gift::TRUEFALSE;
 our @ISA = ('Gift::Question');
 
+sub ANSWER {
+  my $self = shift;
+  $self->ANSWERS->[0]->{ANSWER} = $_[0] if defined($_[0]);
+  return $self->ANSWERS->[0]->{ANSWER};
+}
 
 package Gift::MULTIPLECHOICE;
 our @ISA = ('Gift::Question');
@@ -1690,10 +1695,13 @@ is translated into:
     'POSTSTATE' => '',
   }, 'Gift::TRUEFALSE' )
 
- The fields C<COMMENT_TRUE> and  C<COMMENT_FALSE> hold the feedback 
+The fields C<COMMENT_TRUE> and  C<COMMENT_FALSE> hold the feedback 
 comment that will be displayed by Moodle when the student chooses the
 corresponding answer.
 
+The class provide the method C<ANSWER> which gives you access to
+get or set the C<ANSWER> entry to the only one hash item in the
+C<ANSWERS> array.
 
 =head1 BUGS
 

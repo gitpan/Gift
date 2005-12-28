@@ -1,8 +1,0 @@
-// question: 171  name: correspondencia 
-::correspondencia::[html]Esta pregunta intenta averiguar que caracteriza una cuestion de matching. ¿Cuál es el número de flechas?{
-  =uno -&gt; -> 1
-  =dos -&gt; -&gt; -> -> 2
-  ~tres -&gt; -&gt; -&gt; -> 3
-  =cuatro -&gt; -&gt; -&gt; -&gt; -> 4
-}
-

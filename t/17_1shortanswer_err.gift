@@ -1,8 +1,0 @@
-// Esto es lo que escribió el humano. La interface de Moodle la acepta...
-// No funciona correctamente en la interface Moodle, pero es aceptado
-// sin warnings o errores
-
-(No \= or \~ in the first answer) What is the charge on a CH<sub>3</sub>COO ion.{1- ~2-}
-
-// Se considera una respuesta corta? Esto es lo que exporta Moodle ...
-// question: 335  name: What is the charge on a CH<sub>3</sub>COO ion. 

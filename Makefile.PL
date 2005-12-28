@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     NAME              => 'Gift',
-    VERSION           => '0.5', # Not to crash with $Parse::Yapp::VERSION in the standalone driver
+    VERSION           => '0.6', # Not to crash with $Parse::Yapp::VERSION in the standalone driver
     PREREQ_PM         => {}, 
     #PREREQ_PM         => {Parse::Yapp => 0}, # not needed: parser driver is standalone 
     EXE_FILES         => [ 'script/gift' ],
