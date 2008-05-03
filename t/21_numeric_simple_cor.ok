@@ -3,7 +3,7 @@ $VAR1 = bless( [
                           'PRESTATE' => {
                                           'FORMAT' => 'plain',
                                           'NAME' => 'ejemplo numerica',
-                                          'PREFIX' => '2 m + 2 m \\='
+                                          'PREFIX' => '2 m + 2 m ='
                                         },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
@@ -21,7 +21,7 @@ $VAR1 = bless( [
                           'PRESTATE' => {
                                           'FORMAT' => 'plain',
                                           'NAME' => 'numerica con multiplicadores',
-                                          'PREFIX' => '3 km + 3 km \\='
+                                          'PREFIX' => '3 km + 3 km ='
                                         },
                           'POSTSTATE' => '',
                           'ANSWERS' => [

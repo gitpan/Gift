@@ -3,7 +3,7 @@ $VAR1 = bless( [
                           'PRESTATE' => {
                                           'FORMAT' => undef,
                                           'NAME' => undef,
-                                          'PREFIX' => '(No \\= or \\~ in the first answer) What is the charge on a CH<sub>3</sub>COO ion.'
+                                          'PREFIX' => '(No = or ~ in the first answer) What is the charge on a CH<sub>3</sub>COO ion.'
                                         },
                           'POSTSTATE' => '',
                           'ANSWERS' => [

@@ -5,8 +5,8 @@ README
 lib/Gift.pm
 TODO
 lib/Gift.pm
-lib/Gift.yp
-lib/Makefile
+#lib/Gift.yp
+#lib/Makefile
 script/gift
 t/driver_correct.t
 t/driver_err_or_warn.t

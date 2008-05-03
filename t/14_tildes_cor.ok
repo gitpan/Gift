@@ -31,7 +31,7 @@ $VAR1 = bless( [
                           'PRESTATE' => {
                                           'FORMAT' => 'plain',
                                           'NAME' => 'pregunta con tildes en la respuesta',
-                                          'PREFIX' => '¿Que pasa si ponemos un tilde (\\~) en la respuesta?'
+                                          'PREFIX' => '¿Que pasa si ponemos un tilde (~) en la respuesta?'
                                         },
                           'POSTSTATE' => '',
                           'ANSWERS' => [
@@ -59,7 +59,7 @@ $VAR1 = bless( [
                           'PRESTATE' => {
                                           'FORMAT' => undef,
                                           'NAME' => 'iguales escapados',
-                                          'PREFIX' => 'Tengo unas llaves \\{ y \\} y un \\= y un tilde \\~ en el enunciado ¿Que ocurre?'
+                                          'PREFIX' => 'Tengo unas llaves { y } y un = y un tilde ~ en el enunciado ¿Que ocurre?'
                                         },
                           'POSTSTATE' => '',
                           'ANSWERS' => [

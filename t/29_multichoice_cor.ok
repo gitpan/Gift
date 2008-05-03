@@ -31,7 +31,7 @@ $VAR1 = bless( [
                           'PRESTATE' => {
                                           'FORMAT' => 'plain',
                                           'NAME' => 'pregunta con tildes en la respuesta',
-                                          'PREFIX' => '¿Que pasa si ponemos un tilde (\\~) en la respuesta?'
+                                          'PREFIX' => '¿Que pasa si ponemos un tilde (~) en la respuesta?'
                                         },
                           'POSTSTATE' => '',
                           'ANSWERS' => [

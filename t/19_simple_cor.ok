@@ -23,7 +23,7 @@ $VAR1 = bless( [
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'WEIGHT' => 100,
+                                           'WEIGHT' => '100',
                                            'COMMENT' => '¡Muy bien!',
                                            'ANSWER' => 'h2xs'
                                          }

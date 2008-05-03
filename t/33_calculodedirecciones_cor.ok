@@ -53,15 +53,15 @@ direcciones finales de las cadenas constantes:
   ... <br>
   ##### En compile, despues de haber calculado las direcciones<br>
   Tree::Transform::match_and_transform_list(<br>
-    NODES =&gt; $tree-&gt;\\{STS\\},<br>
-    PATTERN =&gt; sub \\{ <br>
+    NODES =&gt; $tree-&gt;{STS},<br>
+    PATTERN =&gt; sub { <br>
       $_[0]-&gt;isa(\'<br>
 '
                                         },
                           'POSTSTATE' => '<br>
 \')<br>
-    \\},<br>
-    ACTION =&gt; sub \\{ $_[0]-&gt;\\{OFFSET\\} += $global_address; \\}<br>
+    },<br>
+    ACTION =&gt; sub { $_[0]-&gt;{OFFSET} += $global_address; }<br>
   );<br>
 </PRE>
 <P>',
@@ -72,7 +72,7 @@ direcciones finales de las cadenas constantes:
                                            'ANSWER' => 'STR'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => undef,
                                            'ANSWER' => 'STRING'
                                          }

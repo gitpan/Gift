@@ -618,7 +618,7 @@ celebrated on the '
                                            'ANSWER' => 'wrong answer'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => undef,
                                            'TYPE' => 'WRONG',
                                            'ANSWER' => 'half credit answer'
@@ -646,13 +646,13 @@ celebrated on the '
                                            'ANSWER' => 'Jerusalem'
                                          },
                                          {
-                                           'WEIGHT' => 25,
+                                           'WEIGHT' => '25',
                                            'COMMENT' => 'He was born here, but not raised here.',
                                            'TYPE' => 'WRONG',
                                            'ANSWER' => 'Bethlehem'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => 'You need to be more specific.',
                                            'TYPE' => 'WRONG',
                                            'ANSWER' => 'Galilee'
@@ -679,12 +679,12 @@ celebrated on the '
                                            'ANSWER' => 'Nazareth'
                                          },
                                          {
-                                           'WEIGHT' => 75,
+                                           'WEIGHT' => '75',
                                            'COMMENT' => 'Right, but misspelled.',
                                            'ANSWER' => 'Nazereth'
                                          },
                                          {
-                                           'WEIGHT' => 25,
+                                           'WEIGHT' => '25',
                                            'COMMENT' => 'He was born here, but not raised here.',
                                            'ANSWER' => 'Bethlehem'
                                          }
@@ -704,12 +704,12 @@ celebrated on the '
                                            'ANSWER' => 'No one'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => undef,
                                            'ANSWER' => 'Grant'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => undef,
                                            'ANSWER' => 'Grant\'s wife'
                                          },
@@ -729,22 +729,22 @@ celebrated on the '
                           'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
-                                           'WEIGHT' => -50,
+                                           'WEIGHT' => '-50',
                                            'COMMENT' => undef,
                                            'ANSWER' => 'No one'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => undef,
                                            'ANSWER' => 'Grant'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => undef,
                                            'ANSWER' => 'Grant\'s wife'
                                          },
                                          {
-                                           'WEIGHT' => -50,
+                                           'WEIGHT' => '-50',
                                            'COMMENT' => undef,
                                            'ANSWER' => 'Grant\'s father'
                                          }
@@ -1004,7 +1004,7 @@ capitals.'
                                            'ANSWER' => 'wrong answer'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => 'comment on answer',
                                            'TYPE' => 'WRONG',
                                            'ANSWER' => 'half credit answer'
@@ -1031,12 +1031,12 @@ capitals.'
                                            'ANSWER' => 'Nazareth'
                                          },
                                          {
-                                           'WEIGHT' => 75,
+                                           'WEIGHT' => '75',
                                            'COMMENT' => 'Right, but misspelled.',
                                            'ANSWER' => 'Nazereth'
                                          },
                                          {
-                                           'WEIGHT' => 25,
+                                           'WEIGHT' => '25',
                                            'COMMENT' => 'He was born here, but not raised here.',
                                            'ANSWER' => 'Bethlehem'
                                          }

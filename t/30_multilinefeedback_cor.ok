@@ -15,14 +15,14 @@ $VAR1 = bless( [
                                            'ANSWER' => 'Jerusalem'
                                          },
                                          {
-                                           'WEIGHT' => 25,
+                                           'WEIGHT' => '25',
                                            'COMMENT' => 'He was born here, 
                    but not raised here.',
                                            'TYPE' => 'WRONG',
                                            'ANSWER' => 'Bethlehem'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => 'You 
                  need to be 
                  more specific.',

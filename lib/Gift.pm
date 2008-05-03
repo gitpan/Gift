@@ -495,8 +495,11 @@ sub _Parse {
 #
 #Note for the Authors: Look at: /home/webs/pcgull/moodle/datos/12/cuestionario in zion
 
-# The standalone parser in this module was built using the Parse::Yapp 
-# distribution (available from CPAN). The author of Parse::Yapp is Francois Desarmenien.
+# The standalone parser in this module was built using the Parse::Eyapp 
+# distribution (available from CPAN). 
+#
+# eyapp -s -m Gift Gift.yp
+# perl -c Gift.pm
 
 my $input; # input stream
 
@@ -662,37 +665,37 @@ sub new {
 	[#Rule 1
 		 'gift', 1,
 sub
-#line 86 "Gift.yp"
+#line 89 "Gift.yp"
 { $_[1]; }
 	],
 	[#Rule 2
 		 'questions', 3,
 sub
-#line 91 "Gift.yp"
+#line 94 "Gift.yp"
 { push(@{$_[1]}, $_[3]) if defined($_[3]); $_[1] }
 	],
 	[#Rule 3
 		 'questions', 1,
 sub
-#line 92 "Gift.yp"
+#line 95 "Gift.yp"
 { defined($_[1])? [ $_[1] ] : [] }
 	],
 	[#Rule 4
 		 'question', 0,
 sub
-#line 94 "Gift.yp"
+#line 97 "Gift.yp"
 { undef }
 	],
 	[#Rule 5
 		 'question', 5,
 sub
-#line 99 "Gift.yp"
+#line 102 "Gift.yp"
 { $_[0]->build_question($_[1], $_[3], $_[5]); }
 	],
 	[#Rule 6
 		 'answers', 2,
 sub
-#line 102 "Gift.yp"
+#line 105 "Gift.yp"
 { 
                           push @{$_[1]}, $_[2]; $_[1]  
                         }
@@ -700,7 +703,7 @@ sub
 	[#Rule 7
 		 'answers', 1,
 sub
-#line 105 "Gift.yp"
+#line 108 "Gift.yp"
 { 
                           [ $_[1] ] 
                         }
@@ -708,7 +711,7 @@ sub
 	[#Rule 8
 		 'poststate', 0,
 sub
-#line 110 "Gift.yp"
+#line 113 "Gift.yp"
 { '' }
 	],
 	[#Rule 9
@@ -719,7 +722,7 @@ sub
     bless($self,$class);
 }
 
-#line 113 "Gift.yp"
+#line 116 "Gift.yp"
 
 
 sub Warning {
@@ -793,7 +796,8 @@ sub Lex_newquestion {
                  (.*)          # prefix statement
                }sx;
   $newquestion = 0;
-  return ('PRESTATE', { NAME => $2, FORMAT => $5, PREFIX => $6 });
+  my $prefix = Gift::Question->unescape_gift_metasymbols($6);
+  return ('PRESTATE', { NAME => $2, FORMAT => $5, PREFIX => $prefix });
 }
 
 sub parse_end_of_answer {
@@ -1048,9 +1052,11 @@ sub Lex {
     }
 
     if ($post_state and ($input =~ s/\A(.*?)((\n\s*\n)|\Z)/$2/s)) { 
-      $lineno += &countlines($1);
+      my $suffix = Gift::Question->unescape_gift_metasymbols($1);
+      $lineno += &countlines($suffix);
+      &trim_end($suffix);
       $post_state = 0;
-      return ('POSTSTATE', $1 );
+      return ('POSTSTATE', $suffix );
     }
 
     if ($input =~ s/\A\n\s*\n(\S)/$1/) { # There must be at least one character 
@@ -1118,13 +1124,14 @@ sub GiftFromString {
 sub GiftFromFile {
   my ($class, $file) = @_;
 
-  die "The name of a gift file must be provided\n" unless defined($file);
+  die "Error: The name of a gift file must be provided\n" unless defined($file);
   open FILE, $file or die "Can't open file $file\n";
   {
     local $/ = undef;
     $input = <FILE>;
   }
   close(FILE);
+  die "Error: Got nothing from $file\n" unless defined($input);
 
   return $class->ParseGift();
 }
@@ -1173,8 +1180,14 @@ sub NAME {
 
 sub ANSWERS {
   my $self = shift;
+  my @args = @_;
 
-  $self->{ANSWERS} = $_[0] if defined($_[0]);
+  if (defined($_[0]) and ref($_[0])) {
+    $self->{ANSWERS} = $_[0] 
+  }
+  elsif (defined($_[0])) { # not a reference
+    $self->{ANSWERS} = \@args 
+  }
   return $self->{ANSWERS}
 }
 
@@ -1185,10 +1198,29 @@ sub POSTSTATE {
   return $self->{POSTSTATE}
 }
 
+sub unescape_gift_metasymbols {
+  my $self = shift;
+  my $str = shift;
+
+  $str =~ s/\\=/=/g;
+  $str =~ s/\\~/~/g;
+  $str =~ s/\\#/#/g;
+  $str =~ s/\\{/{/g;
+  $str =~ s/\\}/}/g;
+  $str =~ s/\\\\}/\\/g;
+  return $str;
+}
+
+sub Error {
+  my $message = shift;
+
+  die "$message\n";
+}
+
 package Gift::TRUEFALSE;
 our @ISA = ('Gift::Question');
 
-sub ANSWER {
+sub CORRECT_ANSWER {
   my $self = shift;
   $self->ANSWERS->[0]->{ANSWER} = $_[0] if defined($_[0]);
   return $self->ANSWERS->[0]->{ANSWER};
@@ -1197,14 +1229,73 @@ sub ANSWER {
 package Gift::MULTIPLECHOICE;
 our @ISA = ('Gift::Question');
 
+# returns a reference to the array of answer strings
+sub ANSWERS {
+  my $self = shift;
+
+  my $answers = $self->SUPER::ANSWERS();
+  my @ANSWERS = map { $_->{ANSWER} } @$answers;
+  return \@ANSWERS;
+}
+
+sub CORRECT_ANSWER { # Returns the index of the correct answer
+  my $self = shift;
+
+  my $i = 0;
+  for (@{$self->SUPER::ANSWERS}) {
+    return $i if $_->{TYPE} eq 'RIGHT'; # there is only one right answer
+    $i++;
+  }
+}
 
 package Gift::SHORTANSWER;
 our @ISA = ('Gift::Question');
 
+# returns the array of answer strings
+sub CORRECT_ANSWERS {
+  my $self = shift;
+  my @CORRECT_ANSWERS;
+  my $answers = $self->SUPER::ANSWERS();
+
+  for (@$answers) {
+    my ($answer, $weight) = ($_->{ANSWER}, $_->{WEIGHT});
+
+    next if (defined($_->{WEIGHT}) and ($_->{WEIGHT} < 100));
+    push @CORRECT_ANSWERS, $answer;
+  }
+  return \@CORRECT_ANSWERS;
+}
+
+sub LENGTH_SHORTANSWER {
+  my $self = shift;
+  my $ml = 0;
+
+  for  (@{$self->CORRECT_ANSWERS()}) {
+    $ml = length if length > $ml;
+  }
+  return $ml;  
+}
 
 package Gift::MATCH;
 our @ISA = ('Gift::Question');
 
+
+sub RANDOM_ANSWERS {
+  my $self = shift;
+
+  my $answers = $self->SUPER::ANSWERS();
+  my @FIRST = map { $_->{FIRST} } @$answers;
+  my @SECOND = map { $_->{SECOND} } @$answers;
+  my @RANDOM_ANSWERS = ();
+
+  my $k = 0;
+  while (@SECOND) {
+    my $r = int(rand(@SECOND));
+    my $s = splice @SECOND, $r, 1;
+    push @RANDOM_ANSWERS, [$FIRST[$k++], $s];
+  }
+  return \@RANDOM_ANSWERS;
+}
 
 package Gift::NUMERIC;
 our @ISA = ('Gift::Question');
@@ -1619,7 +1710,7 @@ C<{#MinimumValue..MaximumValue}>.
 
 In the GIFT format, answers in Short Answer question-type are all prefixed by an equal sign (=),
 indicating that they are all correct answers. The answers must not contain a
-tilde. The short answer question:
+tilde. The following is a short answer question:
 
   Who's buried in Grant's tomb?{=no one =nobody}
 

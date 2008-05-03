@@ -13,12 +13,12 @@ $VAR1 = bless( [
                                            'ANSWER' => 'No one'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => undef,
                                            'ANSWER' => 'Grant'
                                          },
                                          {
-                                           'WEIGHT' => 50,
+                                           'WEIGHT' => '50',
                                            'COMMENT' => undef,
                                            'ANSWER' => 'Grant\'s wife'
                                          },

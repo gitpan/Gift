@@ -5,7 +5,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for hydrogen is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -20,7 +20,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for helium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -35,7 +35,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for lithium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -50,7 +50,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for beryllium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -65,7 +65,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for boron is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -80,7 +80,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for carbon is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -95,7 +95,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for nitrogen is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -110,7 +110,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for oxygen is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -125,7 +125,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for fluorine is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -140,7 +140,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for neon is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -155,7 +155,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for sodium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -170,7 +170,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for magnesium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -185,7 +185,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for aluminum is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -200,7 +200,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for silicon is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -215,7 +215,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for phosphorus is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -230,7 +230,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for sulfur is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -245,7 +245,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for chlorine is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -260,7 +260,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for argon is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -275,7 +275,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for potassium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -290,7 +290,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for calcium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -305,7 +305,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for scandium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -320,7 +320,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for titanium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -335,7 +335,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for vanadium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -350,7 +350,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for chromium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -365,7 +365,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for manganese is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -380,7 +380,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for iron is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -395,7 +395,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for cobalt is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -410,7 +410,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for nickel is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -425,7 +425,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for copper is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -440,7 +440,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for zinc is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -455,7 +455,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for gallium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -470,7 +470,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for germanium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -485,7 +485,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for arsenic is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -500,7 +500,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for selenium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -515,7 +515,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for bromine is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -530,7 +530,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for krypton is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -545,7 +545,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for rubidium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -560,7 +560,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for strontium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -575,7 +575,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for molybdenum is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -590,7 +590,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for palladium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -605,7 +605,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for silver is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -620,7 +620,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for cadmium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -635,7 +635,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for tin is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -650,7 +650,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for antimony is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -665,7 +665,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for tellurium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -680,7 +680,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for iodine is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -695,7 +695,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for xenon is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -710,7 +710,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for cesium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -725,7 +725,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for barium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -740,7 +740,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for promethium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -755,7 +755,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for tungsten is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -770,7 +770,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for osmium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -785,7 +785,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for iridium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -800,7 +800,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for platinum is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -815,7 +815,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for gold is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -830,7 +830,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for mercury is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -845,7 +845,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for lead is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -860,7 +860,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for bismuth is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -875,7 +875,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for polonium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -890,7 +890,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for radon is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -905,7 +905,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for francium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -920,7 +920,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for radium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -935,7 +935,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for actinium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,
@@ -950,7 +950,7 @@ $VAR1 = bless( [
                                           'NAME' => undef,
                                           'PREFIX' => 'the symbol for uranium is '
                                         },
-                          'POSTSTATE' => '',
+                          'POSTSTATE' => '',
                           'ANSWERS' => [
                                          {
                                            'WEIGHT' => undef,

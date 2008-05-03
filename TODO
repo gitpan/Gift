@@ -1,12 +1,19 @@
+- Nuevos tipos de cuestion:
+  * Cuestiones mezcladas con diversas respuestas:
+    question: POSSTATE # token precedido de  } y terminado  en \n\n. Puede ser vacia
+            | PRESTATE # token precedido de \n\n o EOB y terminado en { 
+              answers 
+              question 
+            ;
+
+  * Cuestiones largas: enviar a foro/server
+  * Cuestiones con expresiones regulares {=~ regexp}
+  * Cuestiones con handlers {-> handler }
+
 - Entregar de nuevo en CPAN (bugs in getter-setters)
 - Poner opción -v en gift
 - Pasarle cover
 - numbers in numeric questions: exponents, etc.
 - Weights > 0 estan contándose bien?
 - Hay una pérdida en el número de líneas en algún lado.
-* Escribir rutina que ejecuta gift sobre todos los .gift  produce los .ok
-* El código de Lex_inside_answers necesita mejorar en claridad
-* Escribir un traductor a "HTML"
-* Escribir un traductor a "CGI"
-* Escribir un traductor a "exam"
-* Escribir un traductor a "latex"
+- Escribir rutina que ejecuta gift sobre todos los .gift  produce los .ok
