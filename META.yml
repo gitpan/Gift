@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Gift
-version:             0.7
+version:             0.8
 abstract:            Parser for Moodle GIFT format for quizs
 license:             ~
 generated_by:        ExtUtils::MakeMaker version 6.31
